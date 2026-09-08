@@ -1,0 +1,65 @@
+package io.codingskuy.cineva.presentation.ui
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Tab
+import androidx.compose.material3.TabRow
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import io.codingskuy.cineva.di.AppContainer
+import io.codingskuy.cineva.presentation.viewmodel.FavoriteViewModel
+import io.codingskuy.cineva.presentation.viewmodel.MovieListViewModel
+import io.codingskuy.cineva.presentation.viewmodel.SearchViewModel
+
+@Composable
+fun CinevaApp(container: AppContainer) {
+    MaterialTheme {
+        var selectedTab by remember { mutableStateOf(0) }
+        Column(modifier = Modifier.fillMaxSize()) {
+            TabRow(selectedTabIndex = selectedTab) {
+                Tab(selected = selectedTab == 0, onClick = { selectedTab = 0 }, text = { Text("Movies") })
+                Tab(selected = selectedTab == 1, onClick = { selectedTab = 1 }, text = { Text("Search") })
+                Tab(selected = selectedTab == 2, onClick = { selectedTab = 2 }, text = { Text("Favorites") })
+            }
+            Box(modifier = Modifier.weight(1f)) {
+                when (selectedTab) {
+                    0 -> {
+                        val vm = remember { MovieListViewModel(container.searchMoviesUseCase) }
+                        val state by vm.uiState.collectAsState()
+                        when (val s = state) {
+                            is io.codingskuy.cineva.presentation.model.MovieListUiState.Success -> MovieListView(movies = s.movies, onMovieClick = {})
+                            is io.codingskuy.cineva.presentation.model.MovieListUiState.Error -> Text(s.message)
+                            is io.codingskuy.cineva.presentation.model.MovieListUiState.Loading -> Text("Loading...")
+                        }
+                    }
+                    1 -> {
+                        val vm = remember { SearchViewModel(container.searchMoviesUseCase) }
+                        val query by vm.query.collectAsState()
+                        val state by vm.uiState.collectAsState()
+                        Column {
+                            SearchView(query = query, onQueryChange = vm::onQueryChange, onClear = vm::clear)
+                            when (val s = state) {
+                                is io.codingskuy.cineva.presentation.model.MovieListUiState.Success -> MovieListView(movies = s.movies, onMovieClick = {})
+                                is io.codingskuy.cineva.presentation.model.MovieListUiState.Error -> Text(s.message)
+                                is io.codingskuy.cineva.presentation.model.MovieListUiState.Loading -> Text("Searching...")
+                            }
+                        }
+                    }
+                    2 -> {
+                        val vm = remember { FavoriteViewModel(container.getFavoritesUseCase) }
+                        val state by vm.uiState.collectAsState()
+                        FavoriteView(favorites = state.favorites, onMovieClick = {})
+                    }
+                }
+            }
+        }
+    }
+}
