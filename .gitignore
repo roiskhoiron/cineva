@@ -1,0 +1,59 @@
+*.iml
+.kotlin
+.gradle
+**/build/
+xcuserdata
+!src/**/build/
+local.properties
+.idea
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+node_modules/
+
+# Kotlin/Native & KMP
+*.klib
+*.kexe
+konan/
+
+# Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Android
+*.ap_
+*.aab
+*.apk
+*.keystore
+*.jks
+google-services.json
+
+# iOS / Xcode
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.hmap
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+project.xcworkspace/
+*.xcuserdata
+
+# Secrets & env
+.env
+.env.local
+*.log
+hs_err_pid*
+
+# Graphify - keep graph.json/GRAPH_REPORT.md, ignore intermediates
+graphify-out/.graphify_*
+graphify-out/.lean-ctx/
+graphify-out/cost.json
+.lean-ctx/
