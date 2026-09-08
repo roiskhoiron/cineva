@@ -26,12 +26,14 @@ class OMDbRemoteDataSource(
         }
     }
 ) {
-    suspend fun search(query: String): SearchResponse {
+    suspend fun search(query: String, page: Int = 1): SearchResponse {
         require(apiKey.isNotBlank()) { "OMDb API key missing" }
+        require(page >= 1) { "page must be >= 1" }
         return client.get(OMDb_BASE_URL) {
             url {
                 parameters.append("apikey", apiKey)
                 parameters.append("s", query)
+                parameters.append("page", page.toString())
             }
         }.body()
     }

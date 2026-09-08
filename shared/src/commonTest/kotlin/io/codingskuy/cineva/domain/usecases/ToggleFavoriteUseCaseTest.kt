@@ -11,7 +11,7 @@ import kotlin.test.Test
 import kotlin.test.assertTrue
 
 private class FakeToggleRepo : MovieRepository {
-    override fun searchMovies(query: String): Flow<Result<List<Movie>>> = flowOf(Result.Success(emptyList()))
+    override fun searchMovies(query: String, page: Int): Flow<Result<io.codingskuy.cineva.domain.entities.PaginatedMovies>> = flowOf(Result.Success(io.codingskuy.cineva.domain.entities.PaginatedMovies(emptyList(), 0, page, false)))
     override fun getMovieDetail(imdbID: String): Flow<Result<io.codingskuy.cineva.domain.entities.MovieDetail>> = flowOf(Result.Error("not implemented"))
     override fun getFavorites(): Flow<List<Movie>> = flowOf(emptyList())
     override fun toggleFavorite(movie: Movie): Flow<Result<Unit>> = flowOf(Result.Success(Unit))

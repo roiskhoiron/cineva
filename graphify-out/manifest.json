@@ -150,9 +150,9 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1788844877.79319,
-    "seen": 1788845010.1693718,
-    "ast_hash": "36662533e61a5c89c137cc2fce2f5a9d",
+    "mtime": 1788845476.1284401,
+    "seen": 1788845828.515323,
+    "ast_hash": "9ed40cc9a5a5dddc58945602187da527",
     "semantic_hash": ""
   },
   "androidApp/src/main/res/mipmap-hdpi/ic_launcher.png": {
@@ -252,9 +252,9 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/OMDbRemoteDataSource.kt": {
-    "mtime": 1788844795.0853193,
-    "seen": 1788845010.169346,
-    "ast_hash": "0b34401d8cff90a6729283addd448ae4",
+    "mtime": 1788845648.454853,
+    "seen": 1788845828.5152938,
+    "ast_hash": "0adbb131f7e217c2742881789b519b90",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/models/OmdbModels.kt": {
@@ -264,9 +264,9 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt": {
-    "mtime": 1788843747.1129498,
-    "seen": 1788844015.037706,
-    "ast_hash": "b3268033ae3bf04dac53b4f1e18fac4b",
+    "mtime": 1788845666.2997677,
+    "seen": 1788845828.515296,
+    "ast_hash": "4a21dd0091d48197b96c00dd4e7a2458",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/di/AppContainer.kt": {
@@ -282,9 +282,9 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt": {
-    "mtime": 1788843353.9810839,
-    "seen": 1788844015.037708,
-    "ast_hash": "513454f26530c1b277c72a87da6f4ccd",
+    "mtime": 1788845655.461338,
+    "seen": 1788845828.5153012,
+    "ast_hash": "f5397265c12fb986db6024c815062bcb",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetFavoritesUseCase.kt": {
@@ -306,9 +306,9 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt": {
-    "mtime": 1788843353.9821243,
-    "seen": 1788844015.0377111,
-    "ast_hash": "65d60a8d11b98ae25ed82b026c011aae",
+    "mtime": 1788845674.8934126,
+    "seen": 1788845828.5153039,
+    "ast_hash": "1c5996a659a84e87837750b2cbe63504",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCase.kt": {
@@ -318,15 +318,15 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt": {
-    "mtime": 1788843354.0112946,
-    "seen": 1788844015.0377119,
-    "ast_hash": "178e888179c1a53b02c83d8c6c1acd55",
+    "mtime": 1788845701.785815,
+    "seen": 1788845828.515305,
+    "ast_hash": "25c3b05c2fc74bc4349366b3e61894a7",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/CinevaApp.kt": {
-    "mtime": 1788844991.6152596,
-    "seen": 1788845010.169356,
-    "ast_hash": "96b2047c4e56852376900640969a7dee",
+    "mtime": 1788845790.3314466,
+    "seen": 1788845828.515306,
+    "ast_hash": "c0b4997c38b6466a1c884f74b6a81008",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/FavoriteView.kt": {
@@ -342,9 +342,9 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt": {
-    "mtime": 1788843354.012724,
-    "seen": 1788844015.037714,
-    "ast_hash": "f83523c27e06cb9ef30e7279103a94f6",
+    "mtime": 1788845774.9944181,
+    "seen": 1788845828.5153081,
+    "ast_hash": "b74e3fe3d5abaf793f33344fe9c7cd41",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/SearchView.kt": {
@@ -366,27 +366,27 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt": {
-    "mtime": 1788843354.0143573,
-    "seen": 1788844015.037716,
-    "ast_hash": "c879bdaac75edb3163fc60406ac6d1ce",
+    "mtime": 1788845732.9875822,
+    "seen": 1788845828.515311,
+    "ast_hash": "13b2339f40112f9b54ed670ad3de81b6",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt": {
-    "mtime": 1788843730.1997304,
-    "seen": 1788844015.037717,
-    "ast_hash": "91c246523e5df0c7c9b51566227c42ee",
+    "mtime": 1788845762.6070173,
+    "seen": 1788845828.515311,
+    "ast_hash": "11a48ee8a4360357ea2704d2417ea8fe",
     "semantic_hash": ""
   },
   "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt": {
-    "mtime": 1788843353.9826908,
-    "seen": 1788844015.037718,
-    "ast_hash": "daf0479be88fd50664cb8cd2e4aee3cc",
+    "mtime": 1788845686.5649316,
+    "seen": 1788845828.515313,
+    "ast_hash": "8b28a6cd45df331b3c47323437b20347",
     "semantic_hash": ""
   },
   "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt": {
-    "mtime": 1788843353.9829347,
-    "seen": 1788844015.037719,
-    "ast_hash": "1a567d8b80df25a7885a3354d91551a7",
+    "mtime": 1788845692.8658943,
+    "seen": 1788845828.5153139,
+    "ast_hash": "ac80e0a231485af5b493b838aa84d205",
     "semantic_hash": ""
   },
   "shared/src/iosMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.ios.kt": {
@@ -425,16 +425,40 @@
     "ast_hash": "82770321d2320a8a64a85430094a12c7",
     "semantic_hash": ""
   },
-  "JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md": {
+  "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/PaginatedMovies.kt": {
+    "mtime": 1788845645.312104,
+    "seen": 1788845828.5153,
+    "ast_hash": "d940477b8492dc29faab35e724943964",
+    "semantic_hash": ""
+  },
+  ".docs/JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md": {
     "mtime": 1788843353.9443374,
-    "seen": 1788844522.636224,
+    "seen": 1788845828.515319,
     "ast_hash": "42cf6b0c3f33d444ecf1032ab60d3043",
     "semantic_hash": ""
   },
-  ".docs/img.png": {
+  ".docs/ss_favorited_movies.png": {
+    "mtime": 1788845160.869725,
+    "seen": 1788845828.515323,
+    "ast_hash": "62315c002fec669a03818498cedf433f",
+    "semantic_hash": ""
+  },
+  ".docs/ss_list_movies.png": {
     "mtime": 1788845008.6047337,
-    "seen": 1788845010.169373,
+    "seen": 1788845828.5153239,
     "ast_hash": "65675e3e225477be88beae4d000f50be",
+    "semantic_hash": ""
+  },
+  ".docs/ss_movie_detailed.png": {
+    "mtime": 1788845189.2299867,
+    "seen": 1788845828.5153248,
+    "ast_hash": "8c52514500172817a1a41668af2489b1",
+    "semantic_hash": ""
+  },
+  ".docs/ss_search_movies.png": {
+    "mtime": 1788845135.3766146,
+    "seen": 1788845828.5153248,
+    "ast_hash": "ad83d9826fc405b014a8bcfc1fb4b4f7",
     "semantic_hash": ""
   }
 }

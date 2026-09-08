@@ -129,16 +129,29 @@
       "source_location": "L6"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
-      "label": "Movie",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl",
+      "label": "MovieRepositoryImpl",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
-      "norm_label": "movie",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/Movie.kt",
+      "norm_label": "movierepositoryimpl",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L15"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "label": "PaginatedMovies",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": "paginatedmovies",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/PaginatedMovies.kt",
       "source_location": "L3"
     },
     {
@@ -148,11 +161,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "error",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L9"
+      "source_location": "L10"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_loading",
@@ -161,11 +174,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "loading",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L10"
+      "source_location": "L11"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository",
@@ -174,11 +187,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "movierepository",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
@@ -187,11 +200,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "result",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L7"
+      "source_location": "L8"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_success",
@@ -200,50 +213,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "success",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L8"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecase_searchmoviesusecase",
-      "label": "SearchMoviesUseCase",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "searchmoviesusecase",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
       "source_location": "L9"
     },
     {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository",
-      "label": "FakeMovieRepository",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecase_togglefavoriteusecase",
+      "label": "ToggleFavoriteUseCase",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
-      "norm_label": "fakemovierepository",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L14"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest",
-      "label": "SearchMoviesUseCaseTest",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "searchmoviesusecasetest",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L24"
+      "norm_label": "togglefavoriteusecase",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCase.kt",
+      "source_location": "L8"
     },
     {
       "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecasetest_faketogglerepo",
@@ -252,7 +239,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "faketogglerepo",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
@@ -265,11 +252,50 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "togglefavoriteusecasetest",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
       "source_location": "L21"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecase_searchmoviesusecase",
+      "label": "SearchMoviesUseCase",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": "searchmoviesusecase",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
+      "source_location": "L9"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository",
+      "label": "FakeMovieRepository",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": "fakemovierepository",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L14"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest",
+      "label": "SearchMoviesUseCaseTest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": "searchmoviesusecasetest",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L25"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_error",
@@ -278,24 +304,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "error",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L9"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_favoriteuistate",
-      "label": "FavoriteUiState",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
-      "file_type": "code",
-      "norm_label": "favoriteuistate",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L18"
+      "source_location": "L15"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_loading",
@@ -304,7 +317,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "loading",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
@@ -317,11 +330,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "moviedetailuistate",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L12"
+      "source_location": "L18"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_movielistuistate",
@@ -330,7 +343,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "movielistuistate",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
@@ -343,24 +356,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "success",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
       "source_location": "L8"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_favoriteviewmodel",
-      "label": "FavoriteViewModel",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
-      "file_type": "code",
-      "norm_label": "favoriteviewmodel",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/FavoriteViewModel.kt",
-      "source_location": "L12"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_moviedetailviewmodel_moviedetailviewmodel",
@@ -369,7 +369,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "moviedetailviewmodel",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieDetailViewModel.kt",
@@ -382,7 +382,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "movielistviewmodel",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
@@ -395,11 +395,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "searchviewmodel",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_datasources_local_localdatasource_localdatasource",
@@ -408,11 +408,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
       "norm_label": "localdatasource",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/LocalDataSource.kt",
       "source_location": "L12"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
+      "label": "Movie",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "Movie",
+      "file_type": "code",
+      "norm_label": "movie",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/Movie.kt",
+      "source_location": "L3"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_databasedriverfactory",
+      "label": "DatabaseDriverFactory",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "databasedriverfactory",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.kt",
+      "source_location": "L5"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainer_appcontainer",
@@ -420,7 +446,7 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 31,
+      "community": 35,
       "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "appcontainer",
@@ -433,7 +459,7 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 31,
+      "community": 35,
       "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "getfavoritesusecase",
@@ -441,69 +467,17 @@
       "source_location": "L7"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase_getmoviedetailusecase",
-      "label": "GetMovieDetailUseCase",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "AppContainer",
-      "file_type": "code",
-      "norm_label": "getmoviedetailusecase",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetMovieDetailUseCase.kt",
-      "source_location": "L8"
-    },
-    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_isfavoriteusecase_isfavoriteusecase",
       "label": "IsFavoriteUseCase",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 31,
+      "community": 35,
       "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "isfavoriteusecase",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/IsFavoriteUseCase.kt",
       "source_location": "L6"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecase_togglefavoriteusecase",
-      "label": "ToggleFavoriteUseCase",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "AppContainer",
-      "file_type": "code",
-      "norm_label": "togglefavoriteusecase",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCase.kt",
-      "source_location": "L8"
-    },
-    {
-      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_databasedriverfactory",
-      "label": "DatabaseDriverFactory",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
-      "file_type": "code",
-      "norm_label": "databasedriverfactory",
-      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
-      "source_location": "L15"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_databasedriverfactory",
-      "label": "DatabaseDriverFactory",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
-      "file_type": "code",
-      "norm_label": "databasedriverfactory",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.kt",
-      "source_location": "L5"
     },
     {
       "id": "shared_src_iosmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_ios_databasedriverfactory",
@@ -512,7 +486,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "databasedriverfactory",
       "source_file": "shared/src/iosMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.ios.kt",
@@ -571,6 +545,45 @@
       "source_location": "L10"
     },
     {
+      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_databasedriverfactory",
+      "label": "DatabaseDriverFactory",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "databasedriverfactory",
+      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
+      "source_location": "L15"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_favoriteuistate",
+      "label": "FavoriteUiState",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "favoriteuistate",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
+      "source_location": "L24"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_favoriteviewmodel",
+      "label": "FavoriteViewModel",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "favoriteviewmodel",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/FavoriteViewModel.kt",
+      "source_location": "L12"
+    },
+    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_datasources_remote_omdbremotedatasource_omdbremotedatasource",
       "label": "OMDbRemoteDataSource",
       "_callable": true,
@@ -623,19 +636,6 @@
       "source_location": "L8"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl",
-      "label": "MovieRepositoryImpl",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "MovieDetail",
-      "file_type": "code",
-      "norm_label": "movierepositoryimpl",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L14"
-    },
-    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_moviedetail",
       "label": "MovieDetail",
       "_callable": true,
@@ -647,6 +647,19 @@
       "norm_label": "moviedetail",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/Movie.kt",
       "source_location": "L11"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase_getmoviedetailusecase",
+      "label": "GetMovieDetailUseCase",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "MovieDetail",
+      "file_type": "code",
+      "norm_label": "getmoviedetailusecase",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetMovieDetailUseCase.kt",
+      "source_location": "L8"
     },
     {
       "id": "iosapp_iosapp_contentview_composeview_makeuiviewcontroller",
@@ -719,16 +732,88 @@
       "source_location": "L8"
     },
     {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_getfavorites",
+      "label": ".getFavorites()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": ".getfavorites()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L51"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_getmoviedetail",
+      "label": ".getMovieDetail()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": ".getmoviedetail()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L41"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_isfavorite",
+      "label": ".isFavorite()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": ".isfavorite()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L72"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_searchmovies",
+      "label": ".searchMovies()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": ".searchmovies()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L20"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_togglefavorite",
+      "label": ".toggleFavorite()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": ".togglefavorite()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L53"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies_empty",
+      "label": ".empty()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": ".empty()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/PaginatedMovies.kt",
+      "source_location": "L10"
+    },
+    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository_getfavorites",
       "label": ".getFavorites()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".getfavorites()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository_getmoviedetail",
@@ -736,11 +821,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".getmoviedetail()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository_isfavorite",
@@ -748,11 +833,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".isfavorite()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository_searchmovies",
@@ -760,11 +845,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".searchmovies()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L14"
+      "source_location": "L15"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository_togglefavorite",
@@ -772,35 +857,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".togglefavorite()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L17"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getfavoritesusecase_getfavoritesusecase_invoke",
-      "label": ".invoke()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".invoke()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetFavoritesUseCase.kt",
-      "source_location": "L8"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase_getmoviedetailusecase_invoke",
-      "label": ".invoke()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".invoke()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetMovieDetailUseCase.kt",
-      "source_location": "L9"
+      "source_location": "L18"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecase_searchmoviesusecase_invoke",
@@ -808,7 +869,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".invoke()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
@@ -820,107 +881,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".invoke()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCase.kt",
       "source_location": "L9"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_getfavorites",
-      "label": ".getFavorites()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".getfavorites()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L19"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_getmoviedetail",
-      "label": ".getMovieDetail()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".getmoviedetail()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L18"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_isfavorite",
-      "label": ".isFavorite()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".isfavorite()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L21"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_searchmovies",
-      "label": ".searchMovies()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".searchmovies()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L17"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_togglefavorite",
-      "label": ".toggleFavorite()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".togglefavorite()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L20"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_blank_query_returns_empty_list",
-      "label": ".`blank query returns empty list`()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".`blank query returns empty list`()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L25"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_non_blank_query_delegates_to_repository",
-      "label": ".`non-blank query delegates to repository`()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".`non-blank query delegates to repository`()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L37"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_whitespace_trimmed_before_search",
-      "label": ".`whitespace trimmed before search`()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": ".`whitespace trimmed before search`()",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L50"
     },
     {
       "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecasetest_faketogglerepo_getfavorites",
@@ -928,7 +893,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".getfavorites()",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
@@ -940,7 +905,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".getmoviedetail()",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
@@ -952,7 +917,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".isfavorite()",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
@@ -964,7 +929,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".searchmovies()",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
@@ -976,7 +941,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".togglefavorite()",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
@@ -988,23 +953,107 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": ".`toggle favorite delegates to repository`()",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
       "source_location": "L22"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_favoriteviewmodel_observefavorites",
-      "label": ".observeFavorites()",
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_getfavorites",
+      "label": ".getFavorites()",
       "_callable": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
       "file_type": "code",
-      "norm_label": ".observefavorites()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/FavoriteViewModel.kt",
-      "source_location": "L23"
+      "norm_label": ".getfavorites()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L20"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_getmoviedetail",
+      "label": ".getMovieDetail()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": ".getmoviedetail()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L19"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_isfavorite",
+      "label": ".isFavorite()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": ".isfavorite()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L22"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_searchmovies",
+      "label": ".searchMovies()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": ".searchmovies()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L17"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_togglefavorite",
+      "label": ".toggleFavorite()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": ".togglefavorite()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L21"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_blank_query_returns_empty_list",
+      "label": ".`blank query returns empty list`()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": ".`blank query returns empty list`()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L26"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_non_blank_query_delegates_to_repository",
+      "label": ".`non-blank query delegates to repository`()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": ".`non-blank query delegates to repository`()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L38"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_whitespace_trimmed_before_search",
+      "label": ".`whitespace trimmed before search`()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": ".`whitespace trimmed before search`()",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L51"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_moviedetailviewmodel_moviedetailviewmodel_loaddetail",
@@ -1012,7 +1061,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": ".loaddetail()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieDetailViewModel.kt",
@@ -1024,7 +1073,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": ".togglefavorite()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieDetailViewModel.kt",
@@ -1036,11 +1085,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": ".loaddefault()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L41"
+      "source_location": "L90"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_loadmore",
+      "label": ".loadMore()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "MovieListViewModel",
+      "file_type": "code",
+      "norm_label": ".loadmore()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
+      "source_location": "L58"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_onloadmore",
+      "label": ".onLoadMore()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "MovieListViewModel",
+      "file_type": "code",
+      "norm_label": ".onloadmore()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
+      "source_location": "L88"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_onquerychange",
@@ -1048,11 +1121,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": ".onquerychange()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L23"
+      "source_location": "L28"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_search",
@@ -1060,11 +1133,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": ".search()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L28"
+      "source_location": "L33"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_clear",
@@ -1072,11 +1145,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": ".clear()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L53"
+      "source_location": "L104"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_loadmore",
+      "label": ".loadMore()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "MovieListViewModel",
+      "file_type": "code",
+      "norm_label": ".loadmore()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
+      "source_location": "L68"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_onloadmore",
+      "label": ".onLoadMore()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "MovieListViewModel",
+      "file_type": "code",
+      "norm_label": ".onloadmore()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
+      "source_location": "L98"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_onquerychange",
@@ -1084,11 +1181,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": ".onquerychange()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L49"
+      "source_location": "L100"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_datasources_local_localdatasource_localdatasource_deletefavorite",
@@ -1096,7 +1193,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
       "norm_label": ".deletefavorite()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/LocalDataSource.kt",
@@ -1108,7 +1205,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
       "norm_label": ".getfavorites()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/LocalDataSource.kt",
@@ -1120,7 +1217,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
       "norm_label": ".insertfavorite()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/LocalDataSource.kt",
@@ -1132,47 +1229,47 @@
       "_callable": true,
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
       "norm_label": ".isfavorite()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/LocalDataSource.kt",
       "source_location": "L29"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_isfavoriteusecase_isfavoriteusecase_invoke",
-      "label": ".invoke()",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_favoriteview_favoriteview",
+      "label": "FavoriteView()",
       "_callable": true,
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
-      "norm_label": ".invoke()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/IsFavoriteUseCase.kt",
-      "source_location": "L7"
+      "norm_label": "favoriteview()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/FavoriteView.kt",
+      "source_location": "L13"
     },
     {
-      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_databasedriverfactory_createdriver",
-      "label": ".createDriver()",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview_movielistview",
+      "label": "MovieListView()",
       "_callable": true,
       "_origin": "ast",
-      "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community": 31,
+      "community_name": "Movie",
       "file_type": "code",
-      "norm_label": ".createdriver()",
-      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
-      "source_location": "L16"
+      "norm_label": "movielistview()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
+      "source_location": "L28"
     },
     {
-      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_initdatabasecontext",
-      "label": "initDatabaseContext()",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview_movierow",
+      "label": "MovieRow()",
       "_callable": true,
       "_origin": "ast",
-      "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community": 31,
+      "community_name": "Movie",
       "file_type": "code",
-      "norm_label": "initdatabasecontext()",
-      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
-      "source_location": "L11"
+      "norm_label": "movierow()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
+      "source_location": "L78"
     },
     {
       "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_remote_apiconfig_android_getapikey",
@@ -1180,7 +1277,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "getapikey()",
       "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/remote/ApiConfig.android.kt",
@@ -1192,7 +1289,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "createappcontainer()",
       "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.android.kt",
@@ -1204,11 +1301,47 @@
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": ".createdriver()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.kt",
       "source_location": "L6"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainerfactory_createappcontainer",
+      "label": "createAppContainer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "createappcontainer()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.kt",
+      "source_location": "L3"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getfavoritesusecase_getfavoritesusecase_invoke",
+      "label": ".invoke()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": ".invoke()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetFavoritesUseCase.kt",
+      "source_location": "L8"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_isfavoriteusecase_isfavoriteusecase_invoke",
+      "label": ".invoke()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": ".invoke()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/IsFavoriteUseCase.kt",
+      "source_location": "L7"
     },
     {
       "id": "shared_src_iosmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_ios_databasedriverfactory_createdriver",
@@ -1216,7 +1349,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": ".createdriver()",
       "source_file": "shared/src/iosMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.ios.kt",
@@ -1228,7 +1361,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "getapikey()",
       "source_file": "shared/src/iosMain/kotlin/io/codingskuy/cineva/data/datasources/remote/ApiConfig.ios.kt",
@@ -1240,7 +1373,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "createappcontainer()",
       "source_file": "shared/src/iosMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.ios.kt",
@@ -1319,6 +1452,30 @@
       "source_location": "L11"
     },
     {
+      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_databasedriverfactory_createdriver",
+      "label": ".createDriver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": ".createdriver()",
+      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
+      "source_location": "L16"
+    },
+    {
+      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_initdatabasecontext",
+      "label": "initDatabaseContext()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "initdatabasecontext()",
+      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
+      "source_location": "L11"
+    },
+    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_app_app",
       "label": "App()",
       "_callable": true,
@@ -1329,18 +1486,6 @@
       "norm_label": "app()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/App.kt",
       "source_location": "L9"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainerfactory_createappcontainer",
-      "label": "createAppContainer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "createappcontainer()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.kt",
-      "source_location": "L3"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_cinevaapp_cinevaapp",
@@ -1355,42 +1500,6 @@
       "source_location": "L35"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_favoriteview_favoriteview",
-      "label": "FavoriteView()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "favoriteview()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/FavoriteView.kt",
-      "source_location": "L13"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview_movielistview",
-      "label": "MovieListView()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "movielistview()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L21"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview_movierow",
-      "label": "MovieRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "movierow()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L38"
-    },
-    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_searchview_searchview",
       "label": "SearchView()",
       "_callable": true,
@@ -1401,6 +1510,18 @@
       "norm_label": "searchview()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/SearchView.kt",
       "source_location": "L14"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_favoriteviewmodel_observefavorites",
+      "label": ".observeFavorites()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": ".observefavorites()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/FavoriteViewModel.kt",
+      "source_location": "L23"
     },
     {
       "id": "shared_src_iosmain_kotlin_io_codingskuy_cineva_mainviewcontroller_mainviewcontroller",
@@ -1424,7 +1545,7 @@
       "file_type": "code",
       "norm_label": ".getdetail()",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/OMDbRemoteDataSource.kt",
-      "source_location": "L39"
+      "source_location": "L41"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_datasources_remote_omdbremotedatasource_omdbremotedatasource_search",
@@ -1451,64 +1572,16 @@
       "source_location": "L25"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_getfavorites",
-      "label": ".getFavorites()",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase_getmoviedetailusecase_invoke",
+      "label": ".invoke()",
       "_callable": true,
       "_origin": "ast",
       "community": 6,
       "community_name": "MovieDetail",
       "file_type": "code",
-      "norm_label": ".getfavorites()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L39"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_getmoviedetail",
-      "label": ".getMovieDetail()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "MovieDetail",
-      "file_type": "code",
-      "norm_label": ".getmoviedetail()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L29"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_isfavorite",
-      "label": ".isFavorite()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "MovieDetail",
-      "file_type": "code",
-      "norm_label": ".isfavorite()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L60"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_searchmovies",
-      "label": ".searchMovies()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "MovieDetail",
-      "file_type": "code",
-      "norm_label": ".searchmovies()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L19"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_togglefavorite",
-      "label": ".toggleFavorite()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "MovieDetail",
-      "file_type": "code",
-      "norm_label": ".togglefavorite()",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L41"
+      "norm_label": ".invoke()",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetMovieDetailUseCase.kt",
+      "source_location": "L9"
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_moviedetailview_moviedetailview",
@@ -1725,11 +1798,44 @@
       "source_location": "L1"
     },
     {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl",
+      "label": "MovieRepositoryImpl.kt",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": "movierepositoryimpl.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_kt_flow",
+      "label": "Flow",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": "flow",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies",
+      "label": "PaginatedMovies.kt",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": "paginatedmovies.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/PaginatedMovies.kt",
+      "source_location": "L1"
+    },
+    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository",
       "label": "MovieRepository.kt",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "movierepository.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
@@ -1740,51 +1846,7 @@
       "label": "Flow",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "flow",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getfavoritesusecase",
-      "label": "GetFavoritesUseCase.kt",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "getfavoritesusecase.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetFavoritesUseCase.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getfavoritesusecase_kt_flow",
-      "label": "Flow",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "flow",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase",
-      "label": "GetMovieDetailUseCase.kt",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "getmoviedetailusecase.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetMovieDetailUseCase.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase_kt_flow",
-      "label": "Flow",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "flow",
       "source_file": "",
@@ -1795,7 +1857,7 @@
       "label": "SearchMoviesUseCase.kt",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "searchmoviesusecase.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
@@ -1806,7 +1868,7 @@
       "label": "Flow",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "flow",
       "source_file": "",
@@ -1817,7 +1879,7 @@
       "label": "ToggleFavoriteUseCase.kt",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "togglefavoriteusecase.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCase.kt",
@@ -1828,42 +1890,9 @@
       "label": "Flow",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "flow",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest",
-      "label": "SearchMoviesUseCaseTest.kt",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "searchmoviesusecasetest.kt",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_kt_flow",
-      "label": "Flow",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "flow",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_kt_io",
-      "label": "io",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Movie",
-      "file_type": "code",
-      "norm_label": "io",
       "source_file": "",
       "source_location": ""
     },
@@ -1872,7 +1901,7 @@
       "label": "ToggleFavoriteUseCaseTest.kt",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "togglefavoriteusecasetest.kt",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
@@ -1883,7 +1912,7 @@
       "label": "Flow",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "flow",
       "source_file": "",
@@ -1894,7 +1923,7 @@
       "label": "io",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "io",
       "source_file": "",
@@ -1905,7 +1934,7 @@
       "label": "T",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Movie",
+      "community_name": "Result",
       "file_type": "code",
       "norm_label": "t",
       "source_file": "",
@@ -1945,11 +1974,44 @@
       "source_location": "L1"
     },
     {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest",
+      "label": "SearchMoviesUseCaseTest.kt",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": "searchmoviesusecasetest.kt",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_kt_flow",
+      "label": "Flow",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": "flow",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_kt_io",
+      "label": "io",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FakeMovieRepository",
+      "file_type": "code",
+      "norm_label": "io",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate",
       "label": "UiState.kt",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "uistate.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
@@ -1960,51 +2022,18 @@
       "label": "CinevaApp.kt",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "cinevaapp.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/CinevaApp.kt",
       "source_location": "L1"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel",
-      "label": "FavoriteViewModel.kt",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
-      "file_type": "code",
-      "norm_label": "favoriteviewmodel.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/FavoriteViewModel.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_kt_stateflow",
-      "label": "StateFlow",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
-      "file_type": "code",
-      "norm_label": "stateflow",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_kt_viewmodel",
-      "label": "ViewModel",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
-      "file_type": "code",
-      "norm_label": "viewmodel",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_moviedetailviewmodel",
       "label": "MovieDetailViewModel.kt",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "moviedetailviewmodel.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieDetailViewModel.kt",
@@ -2015,7 +2044,7 @@
       "label": "StateFlow",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "stateflow",
       "source_file": "",
@@ -2026,7 +2055,7 @@
       "label": "ViewModel",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "viewmodel",
       "source_file": "",
@@ -2037,7 +2066,7 @@
       "label": "MovieListViewModel.kt",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "movielistviewmodel.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
@@ -2048,7 +2077,7 @@
       "label": "StateFlow",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "stateflow",
       "source_file": "",
@@ -2059,7 +2088,7 @@
       "label": "ViewModel",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "viewmodel",
       "source_file": "",
@@ -2070,7 +2099,7 @@
       "label": "SearchViewModel.kt",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "searchviewmodel.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
@@ -2081,7 +2110,7 @@
       "label": "StateFlow",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "stateflow",
       "source_file": "",
@@ -2092,7 +2121,7 @@
       "label": "ViewModel",
       "_origin": "ast",
       "community": 30,
-      "community_name": "MovieDetailViewModel.kt",
+      "community_name": "MovieListViewModel",
       "file_type": "code",
       "norm_label": "viewmodel",
       "source_file": "",
@@ -2103,7 +2132,7 @@
       "label": "LocalDataSource.kt",
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
       "norm_label": "localdatasource.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/LocalDataSource.kt",
@@ -2114,44 +2143,67 @@
       "label": "Flow",
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
       "norm_label": "flow",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainer",
-      "label": "AppContainer.kt",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_favoriteview",
+      "label": "FavoriteView.kt",
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
-      "norm_label": "appcontainer.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/di/AppContainer.kt",
+      "norm_label": "favoriteview.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/FavoriteView.kt",
       "source_location": "L1"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_isfavoriteusecase",
-      "label": "IsFavoriteUseCase.kt",
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_favoriteview_kt_modifier",
+      "label": "Modifier",
       "_origin": "ast",
       "community": 31,
-      "community_name": "AppContainer",
+      "community_name": "Movie",
       "file_type": "code",
-      "norm_label": "isfavoriteusecase.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/IsFavoriteUseCase.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_isfavoriteusecase_kt_flow",
-      "label": "Flow",
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "AppContainer",
-      "file_type": "code",
-      "norm_label": "flow",
+      "norm_label": "modifier",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview",
+      "label": "MovieListView.kt",
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "Movie",
+      "file_type": "code",
+      "norm_label": "movielistview.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview_kt_modifier",
+      "label": "Modifier",
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "Movie",
+      "file_type": "code",
+      "norm_label": "modifier",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "docs_jawaban_essay_penggunaan_ai_dalam_pekerjaan",
+      "label": "JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "jawaban essay - penggunaan ai dalam pekerjaan.md",
+      "source_file": ".docs/JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md",
+      "source_location": "L1"
     },
     {
       "id": "opencode_plans_cineva_kmp_clean_architecture_plan",
@@ -2250,56 +2302,11 @@
       "source_location": "L1"
     },
     {
-      "id": "jawaban_essay_penggunaan_ai_dalam_pekerjaan",
-      "label": "JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "jawaban essay - penggunaan ai dalam pekerjaan.md",
-      "source_file": "JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "android",
-      "label": "android",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
-      "file_type": "code",
-      "norm_label": "android",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android",
-      "label": "DatabaseDriverFactory.android.kt",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
-      "file_type": "code",
-      "norm_label": "databasedriverfactory.android.kt",
-      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_kt_sqldriver",
-      "label": "SqlDriver",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
-      "file_type": "code",
-      "norm_label": "sqldriver",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_remote_apiconfig_android",
       "label": "ApiConfig.android.kt",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "apiconfig.android.kt",
       "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/remote/ApiConfig.android.kt",
@@ -2310,7 +2317,7 @@
       "label": "AppContainerFactory.android.kt",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "appcontainerfactory.android.kt",
       "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.android.kt",
@@ -2321,7 +2328,7 @@
       "label": "DatabaseDriverFactory.kt",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "databasedriverfactory.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.kt",
@@ -2332,9 +2339,75 @@
       "label": "SqlDriver",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "sqldriver",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainer",
+      "label": "AppContainer.kt",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "appcontainer.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/di/AppContainer.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainerfactory",
+      "label": "AppContainerFactory.kt",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "appcontainerfactory.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getfavoritesusecase",
+      "label": "GetFavoritesUseCase.kt",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "getfavoritesusecase.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetFavoritesUseCase.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getfavoritesusecase_kt_flow",
+      "label": "Flow",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "flow",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_isfavoriteusecase",
+      "label": "IsFavoriteUseCase.kt",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "isfavoriteusecase.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/IsFavoriteUseCase.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_isfavoriteusecase_kt_flow",
+      "label": "Flow",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppContainer",
+      "file_type": "code",
+      "norm_label": "flow",
       "source_file": "",
       "source_location": ""
     },
@@ -2343,7 +2416,7 @@
       "label": "DatabaseDriverFactory.ios.kt",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "databasedriverfactory.ios.kt",
       "source_file": "shared/src/iosMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.ios.kt",
@@ -2354,7 +2427,7 @@
       "label": "SqlDriver",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "sqldriver",
       "source_file": "",
@@ -2365,7 +2438,7 @@
       "label": "ApiConfig.ios.kt",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "apiconfig.ios.kt",
       "source_file": "shared/src/iosMain/kotlin/io/codingskuy/cineva/data/datasources/remote/ApiConfig.ios.kt",
@@ -2376,7 +2449,7 @@
       "label": "AppContainerFactory.ios.kt",
       "_origin": "ast",
       "community": 35,
-      "community_name": "DatabaseDriverFactory.kt",
+      "community_name": "AppContainer",
       "file_type": "code",
       "norm_label": "appcontainerfactory.ios.kt",
       "source_file": "shared/src/iosMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.ios.kt",
@@ -2427,6 +2500,17 @@
       "source_location": "L1"
     },
     {
+      "id": "android",
+      "label": "android",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "android",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "androidapp_src_main_kotlin_io_codingskuy_cineva_mainactivity",
       "label": "MainActivity.kt",
       "_origin": "ast",
@@ -2460,6 +2544,28 @@
       "source_location": ""
     },
     {
+      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android",
+      "label": "DatabaseDriverFactory.android.kt",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "databasedriverfactory.android.kt",
+      "source_file": "shared/src/androidMain/kotlin/io/codingskuy/cineva/data/datasources/local/DatabaseDriverFactory.android.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_androidmain_kotlin_io_codingskuy_cineva_data_datasources_local_databasedriverfactory_android_kt_sqldriver",
+      "label": "SqlDriver",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "sqldriver",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_app",
       "label": "App.kt",
       "_origin": "ast",
@@ -2469,61 +2575,6 @@
       "norm_label": "app.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/App.kt",
       "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainerfactory",
-      "label": "AppContainerFactory.kt",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "appcontainerfactory.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/di/AppContainerFactory.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_favoriteview",
-      "label": "FavoriteView.kt",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "favoriteview.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/FavoriteView.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_favoriteview_kt_modifier",
-      "label": "Modifier",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "modifier",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview",
-      "label": "MovieListView.kt",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "movielistview.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_movielistview_kt_modifier",
-      "label": "Modifier",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "CinevaApp",
-      "file_type": "code",
-      "norm_label": "modifier",
-      "source_file": "",
-      "source_location": ""
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_searchview",
@@ -2544,6 +2595,39 @@
       "community_name": "CinevaApp",
       "file_type": "code",
       "norm_label": "modifier",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel",
+      "label": "FavoriteViewModel.kt",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "favoriteviewmodel.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/FavoriteViewModel.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_kt_stateflow",
+      "label": "StateFlow",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "stateflow",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_favoriteviewmodel_kt_viewmodel",
+      "label": "ViewModel",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "CinevaApp",
+      "file_type": "code",
+      "norm_label": "viewmodel",
       "source_file": "",
       "source_location": ""
     },
@@ -2581,28 +2665,6 @@
       "source_location": "L1"
     },
     {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl",
-      "label": "MovieRepositoryImpl.kt",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "MovieDetail",
-      "file_type": "code",
-      "norm_label": "movierepositoryimpl.kt",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_kt_flow",
-      "label": "Flow",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "MovieDetail",
-      "file_type": "code",
-      "norm_label": "flow",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie",
       "label": "Movie.kt",
       "_origin": "ast",
@@ -2612,6 +2674,28 @@
       "norm_label": "movie.kt",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/Movie.kt",
       "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase",
+      "label": "GetMovieDetailUseCase.kt",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "MovieDetail",
+      "file_type": "code",
+      "norm_label": "getmoviedetailusecase.kt",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/GetMovieDetailUseCase.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_getmoviedetailusecase_kt_flow",
+      "label": "Flow",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "MovieDetail",
+      "file_type": "code",
+      "norm_label": "flow",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_moviedetailview",
@@ -3518,6 +3602,18 @@
       "weight": 1.0
     },
     {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_searchmovies",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_di_appcontainer_appcontainer",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_datasources_remote_omdbremotedatasource_omdbremotedatasource",
       "relation": "calls",
@@ -3614,6 +3710,18 @@
       "weight": 1.0
     },
     {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies_empty",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/PaginatedMovies.kt",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_ui_cinevaapp_cinevaapp",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel",
       "relation": "calls",
@@ -3634,7 +3742,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/CinevaApp.kt",
-      "source_location": "L129",
+      "source_location": "L135",
       "weight": 1.0
     },
     {
@@ -3646,7 +3754,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/CinevaApp.kt",
-      "source_location": "L142",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -3682,7 +3790,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L33",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -3718,7 +3826,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L41",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_onloadmore",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_loadmore",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -3730,7 +3850,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L25",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_onloadmore",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_loadmore",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_searchmovies",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -3742,24 +3886,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
       "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_non_blank_query_delegates_to_repository",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L39",
-      "weight": 1.0
-    },
-    {
-      "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_non_blank_query_delegates_to_repository",
-      "target": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3770,6 +3902,18 @@
       "weight": 1.0
     },
     {
+      "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_non_blank_query_delegates_to_repository",
+      "target": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
       "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_searchmoviesusecasetest_whitespace_trimmed_before_search",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
       "relation": "calls",
@@ -3778,7 +3922,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L52",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -3790,7 +3934,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L53",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecasetest_faketogglerepo_searchmovies",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/ToggleFavoriteUseCaseTest.kt",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -3910,7 +4066,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -3922,7 +4078,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L39",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -3934,47 +4090,11 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L29",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_getmoviedetail",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "generic_arg",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L29",
-      "weight": 1.0
-    },
-    {
-      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_searchmovies",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "generic_arg",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_searchmovies",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "generic_arg",
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_togglefavorite",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
       "relation": "references",
       "_origin": "ast",
@@ -3986,6 +4106,30 @@
       "weight": 1.0
     },
     {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_searchmovies",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl_movierepositoryimpl_togglefavorite",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository_getfavorites",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
       "relation": "references",
@@ -3994,7 +4138,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -4006,7 +4150,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -4018,19 +4162,19 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository_searchmovies",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -4042,7 +4186,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -4054,7 +4198,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -4066,7 +4210,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -4107,7 +4251,7 @@
     },
     {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecase_searchmoviesusecase_invoke",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4162,7 +4306,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L21",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -4198,7 +4342,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -4210,7 +4354,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -4222,7 +4366,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -4234,12 +4378,12 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
       "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_searchmovies",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4251,7 +4395,7 @@
     },
     {
       "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_fakemovierepository_searchmovies",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
+      "target": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecasetest_kt_io",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4270,7 +4414,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -4311,7 +4455,7 @@
     },
     {
       "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecasetest_faketogglerepo_searchmovies",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4323,7 +4467,7 @@
     },
     {
       "source": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecasetest_faketogglerepo_searchmovies",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
+      "target": "shared_src_commontest_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecasetest_kt_io",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4417,7 +4561,7 @@
         "target_fqn": "androidx.compose.ui.Modifier"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L16",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -4796,21 +4940,6 @@
       "weight": 1.0
     },
     {
-      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecase",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "metadata": {
-        "target_fqn": "io.codingskuy.cineva.domain.entities.Movie"
-      },
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_togglefavoriteusecase",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_movie_movie",
       "relation": "imports",
@@ -4882,7 +5011,7 @@
         "target_fqn": "io.codingskuy.cineva.domain.entities.Movie"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L19",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -5022,6 +5151,51 @@
     },
     {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "target_fqn": "io.codingskuy.cineva.domain.entities.PaginatedMovies"
+      },
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "target_fqn": "io.codingskuy.cineva.domain.entities.PaginatedMovies"
+      },
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_usecases_searchmoviesusecase",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "target_fqn": "io.codingskuy.cineva.domain.entities.PaginatedMovies"
+      },
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_data_repositories_movierepositoryimpl",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository",
       "relation": "imports",
       "_origin": "ast",
@@ -5032,7 +5206,7 @@
         "target_fqn": "io.codingskuy.cineva.domain.repositories.MovieRepository"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -5107,7 +5281,7 @@
         "target_fqn": "io.codingskuy.cineva.domain.repositories.MovieRepository"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -5167,7 +5341,7 @@
         "target_fqn": "io.codingskuy.cineva.domain.repositories.Result"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -5197,7 +5371,7 @@
         "target_fqn": "io.codingskuy.cineva.domain.repositories.Result"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCase.kt",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -5602,7 +5776,7 @@
         "target_fqn": "kotlinx.coroutines.flow.Flow"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -5767,7 +5941,7 @@
         "target_fqn": "kotlinx.coroutines.flow.flow"
       },
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -5914,7 +6088,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L41",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -5926,7 +6100,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -5998,7 +6172,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L21",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -6010,7 +6184,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L38",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -6046,7 +6220,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -6145,7 +6319,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/OMDbRemoteDataSource.kt",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -6169,7 +6343,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L39",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -6181,7 +6355,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L29",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -6193,7 +6367,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L60",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -6205,7 +6379,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -6217,7 +6391,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L41",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -6241,7 +6415,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -6253,7 +6427,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -6265,7 +6439,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -6277,7 +6451,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -6289,7 +6463,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -6373,7 +6547,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -6385,7 +6559,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -6397,7 +6571,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -6421,7 +6595,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -6868,7 +7042,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -6916,6 +7090,17 @@
       "weight": 1.0
     },
     {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_entities_paginatedmovies_paginatedmovies",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/entities/PaginatedMovies.kt",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_movierepository",
       "relation": "contains",
@@ -6923,7 +7108,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -6934,18 +7119,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_loading",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L10",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -6956,7 +7130,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L9",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_result",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_domain_repositories_movierepository_loading",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -7044,7 +7229,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L12",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -7055,7 +7240,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L18",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -7077,11 +7262,22 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L13",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
       "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_moviedetailuistate",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_error",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_movielistuistate",
       "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_error",
       "relation": "contains",
       "_origin": "ast",
@@ -7100,17 +7296,6 @@
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
       "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_movielistuistate",
-      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_model_uistate_error",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -7154,7 +7339,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L21",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -7165,7 +7350,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/MovieListView.kt",
-      "source_location": "L38",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -7220,7 +7405,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -7242,7 +7427,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -7429,7 +7614,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -7440,7 +7625,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -7451,7 +7636,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/model/UiState.kt",
-      "source_location": "L14",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -7550,7 +7735,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -7704,7 +7889,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/OMDbRemoteDataSource.kt",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -7715,7 +7900,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -7726,7 +7911,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L29",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -7737,7 +7922,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L39",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -7748,7 +7933,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L41",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -7759,7 +7944,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/repositories/MovieRepositoryImpl.kt",
-      "source_location": "L60",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -7770,7 +7955,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -7781,7 +7966,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -7792,7 +7977,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -7803,7 +7988,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -7814,7 +7999,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/domain/repositories/MovieRepository.kt",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -7913,7 +8098,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L23",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -7924,7 +8109,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L28",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_loadmore",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_movielistviewmodel_movielistviewmodel_onloadmore",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -7935,7 +8142,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/MovieListViewModel.kt",
-      "source_location": "L41",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -7946,7 +8153,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L49",
+      "source_location": "L100",
       "weight": 1.0
     },
     {
@@ -7957,7 +8164,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
-      "source_location": "L53",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_loadmore",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel",
+      "target": "shared_src_commonmain_kotlin_io_codingskuy_cineva_presentation_viewmodel_searchviewmodel_searchviewmodel_onloadmore",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/viewmodel/SearchViewModel.kt",
+      "source_location": "L98",
       "weight": 1.0
     },
     {
@@ -7979,7 +8208,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -7990,7 +8219,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -8001,7 +8230,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -8012,7 +8241,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -8023,7 +8252,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -8034,7 +8263,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -8045,7 +8274,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -8251,7 +8480,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/CinevaApp.kt",
-      "source_location": "L133",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -8263,7 +8492,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/CinevaApp.kt",
-      "source_location": "L144",
+      "source_location": "L156",
       "weight": 1.0
     },
     {
@@ -8299,7 +8528,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -8311,7 +8540,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -8323,7 +8552,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "shared/src/commonTest/kotlin/io/codingskuy/cineva/domain/usecases/SearchMoviesUseCaseTest.kt",
-      "source_location": "L54",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -8828,5 +9057,5 @@
       "source_file": ".docs/PRD_KMP_CleanArchitecture.md"
     }
   ],
-  "built_at_commit": "7ca469f2fcc3da295c75d1896d8f7594f774284b"
+  "built_at_commit": "384a5d06985d10ac8ad6af0f3358430ce12c38f8"
 }

@@ -14,7 +14,8 @@ import kotlin.test.assertTrue
 private class FakeMovieRepository(
     private val searchResult: List<Movie> = emptyList()
 ) : MovieRepository {
-    override fun searchMovies(query: String): Flow<Result<List<Movie>>> = flowOf(Result.Success(searchResult))
+    override fun searchMovies(query: String, page: Int): Flow<Result<io.codingskuy.cineva.domain.entities.PaginatedMovies>> =
+        flowOf(Result.Success(io.codingskuy.cineva.domain.entities.PaginatedMovies(searchResult, searchResult.size, page, false)))
     override fun getMovieDetail(imdbID: String): Flow<Result<io.codingskuy.cineva.domain.entities.MovieDetail>> = flowOf(Result.Error("not implemented"))
     override fun getFavorites(): Flow<List<Movie>> = flowOf(emptyList())
     override fun toggleFavorite(movie: Movie): Flow<Result<Unit>> = flowOf(Result.Success(Unit))
@@ -29,7 +30,7 @@ class SearchMoviesUseCaseTest {
         useCase("").test {
             val result = awaitItem()
             assertTrue(result is Result.Success)
-            assertEquals(0, (result as Result.Success).data.size)
+            assertEquals(0, (result as Result.Success).data.movies.size)
             awaitComplete()
         }
     }
@@ -42,7 +43,7 @@ class SearchMoviesUseCaseTest {
         useCase("batman").test {
             val result = awaitItem()
             assertTrue(result is Result.Success)
-            assertEquals(1, (result as Result.Success).data.size)
+            assertEquals(1, (result as Result.Success).data.movies.size)
             awaitComplete()
         }
     }

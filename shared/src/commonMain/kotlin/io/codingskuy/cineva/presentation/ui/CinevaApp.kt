@@ -120,7 +120,13 @@ fun CinevaApp(container: AppContainer) {
                             LaunchedEffect(vm) { vm.loadDefault() }
                             val state by vm.uiState.collectAsState()
                             when (val s = state) {
-                                is io.codingskuy.cineva.presentation.model.MovieListUiState.Success -> MovieListView(movies = s.movies, onMovieClick = { selectedMovie = it })
+                                is io.codingskuy.cineva.presentation.model.MovieListUiState.Success -> MovieListView(
+                                    movies = s.movies,
+                                    onMovieClick = { selectedMovie = it },
+                                    hasMore = s.hasMore,
+                                    isLoadingMore = s.isLoadingMore,
+                                    onLoadMore = { vm.onLoadMore() }
+                                )
                                 is io.codingskuy.cineva.presentation.model.MovieListUiState.Error -> Text(s.message, modifier = Modifier.padding(16.dp))
                                 is io.codingskuy.cineva.presentation.model.MovieListUiState.Loading -> Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("Loading movies...") }
                             }
@@ -132,7 +138,13 @@ fun CinevaApp(container: AppContainer) {
                         Column {
                             SearchView(query = query, onQueryChange = vm::onQueryChange, onClear = vm::clear)
                             when (val s = state) {
-                                is io.codingskuy.cineva.presentation.model.MovieListUiState.Success -> MovieListView(movies = s.movies, onMovieClick = { selectedMovie = it })
+                                is io.codingskuy.cineva.presentation.model.MovieListUiState.Success -> MovieListView(
+                                    movies = s.movies,
+                                    onMovieClick = { selectedMovie = it },
+                                    hasMore = s.hasMore,
+                                    isLoadingMore = s.isLoadingMore,
+                                    onLoadMore = { vm.onLoadMore() }
+                                )
                                 is io.codingskuy.cineva.presentation.model.MovieListUiState.Error -> Text(s.message, modifier = Modifier.padding(8.dp))
                                 is io.codingskuy.cineva.presentation.model.MovieListUiState.Loading -> Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("Searching...") }
                             }

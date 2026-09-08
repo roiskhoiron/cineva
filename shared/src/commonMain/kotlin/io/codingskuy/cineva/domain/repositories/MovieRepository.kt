@@ -2,6 +2,7 @@ package io.codingskuy.cineva.domain.repositories
 
 import io.codingskuy.cineva.domain.entities.Movie
 import io.codingskuy.cineva.domain.entities.MovieDetail
+import io.codingskuy.cineva.domain.entities.PaginatedMovies
 import kotlinx.coroutines.flow.Flow
 
 sealed interface Result<out T> {
@@ -11,7 +12,7 @@ sealed interface Result<out T> {
 }
 
 interface MovieRepository {
-    fun searchMovies(query: String): Flow<Result<List<Movie>>>
+    fun searchMovies(query: String, page: Int = 1): Flow<Result<PaginatedMovies>>
     fun getMovieDetail(imdbID: String): Flow<Result<MovieDetail>>
     fun getFavorites(): Flow<List<Movie>>
     fun toggleFavorite(movie: Movie): Flow<Result<Unit>>

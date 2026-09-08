@@ -20,23 +20,72 @@ class MovieListViewModel(
     private val _query = MutableStateFlow("")
     val query: StateFlow<String> = _query.asStateFlow()
 
+    private var currentPage = 1
+    private var currentQuery = ""
+    private var hasMore = false
+    private var isLoadingMore = false
+
     fun onQueryChange(newQuery: String) {
         _query.value = newQuery
         search(newQuery)
     }
 
     fun search(query: String) {
+        currentQuery = query
+        currentPage = 1
+        hasMore = false
         viewModelScope.launch {
             _uiState.value = MovieListUiState.Loading
-            searchMoviesUseCase(query).collect { result ->
+            searchMoviesUseCase(query, page = 1).collect { result ->
                 _uiState.value = when (result) {
-                    is Result.Success -> MovieListUiState.Success(result.data, query)
+                    is Result.Success -> {
+                        hasMore = result.data.hasMore
+                        MovieListUiState.Success(
+                            movies = result.data.movies,
+                            query = query,
+                            page = result.data.page,
+                            hasMore = result.data.hasMore,
+                            isLoadingMore = false
+                        )
+                    }
                     is Result.Error -> MovieListUiState.Error(result.message)
                     Result.Loading -> MovieListUiState.Loading
                 }
             }
         }
     }
+
+    fun loadMore() {
+        if (isLoadingMore || !hasMore) return
+        val prevSuccess = _uiState.value as? MovieListUiState.Success ?: return
+        val nextPage = currentPage + 1
+        isLoadingMore = true
+        _uiState.value = prevSuccess.copy(isLoadingMore = true)
+        viewModelScope.launch {
+            searchMoviesUseCase(currentQuery, page = nextPage).collect { result ->
+                isLoadingMore = false
+                when (result) {
+                    is Result.Success -> {
+                        hasMore = result.data.hasMore
+                        currentPage = result.data.page
+                        _uiState.value = MovieListUiState.Success(
+                            movies = prevSuccess.movies + result.data.movies,
+                            query = currentQuery,
+                            page = nextPage,
+                            hasMore = result.data.hasMore,
+                            isLoadingMore = false
+                        )
+                    }
+                    is Result.Error -> {
+                        _uiState.value = prevSuccess.copy(isLoadingMore = false)
+                    }
+                    Result.Loading -> Unit
+                }
+            }
+        }
+    }
+
+    fun onLoadMore() = loadMore()
 
     fun loadDefault() = search("batman")
 }

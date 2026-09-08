@@ -5,6 +5,7 @@ import io.codingskuy.cineva.data.datasources.remote.OMDbRemoteDataSource
 import io.codingskuy.cineva.data.models.toEntity
 import io.codingskuy.cineva.domain.entities.Movie
 import io.codingskuy.cineva.domain.entities.MovieDetail
+import io.codingskuy.cineva.domain.entities.PaginatedMovies
 import io.codingskuy.cineva.domain.repositories.MovieRepository
 import io.codingskuy.cineva.domain.repositories.Result
 import kotlinx.coroutines.flow.Flow
@@ -16,11 +17,22 @@ class MovieRepositoryImpl(
     private val local: LocalDataSource
 ) : MovieRepository {
 
-    override fun searchMovies(query: String): Flow<Result<List<Movie>>> = flow {
+    override fun searchMovies(query: String, page: Int): Flow<Result<PaginatedMovies>> = flow {
         emit(Result.Loading)
-        val response = remote.search(query)
+        val response = remote.search(query, page)
         if (response.response == "True" && response.search != null) {
-            emit(Result.Success(response.search.map { it.toEntity() }))
+            val total = response.totalResults?.toIntOrNull() ?: response.search.size
+            val hasMore = page * 10 < total
+            emit(
+                Result.Success(
+                    PaginatedMovies(
+                        movies = response.search.map { it.toEntity() },
+                        totalResults = total,
+                        page = page,
+                        hasMore = hasMore
+                    )
+                )
+            )
         } else {
             emit(Result.Error(response.error ?: "No results"))
         }
