@@ -136,7 +136,9 @@ Use run configurations in IDE toolbar or:
 - IDE index: `isDumbMode=false, isIndexing=false`
 - Diagnostics pre-fix: `LocalDataSource.kt:16` `Unresolved reference 'IO'` (commonMain tidak punya `Dispatchers.IO`) + `isFavorite` star-projection `Comparable` + `suspend` redundant
 - Fix: `LocalDataSource.kt:11` `Dispatchers.IO → Dispatchers.Default`, `isFavorite` via `selectById().mapToOneOrNull().map { it != null }`, hapus `suspend` insert/delete, `SearchViewModel.kt:29` `debounce(300) → debounce(300.milliseconds)`, `CinevaApp.kt:27` `TabRow → PrimaryTabRow` (M3), `MovieRepositoryImpl.kt:13` hapus import `map` unused
-- Post-fix: `LocalDataSource.kt:0` problems `0`, `SearchViewModel.kt:0`, `CinevaApp.kt:1` warning `unused` saja
+- Post-fix v2 (2026-09-08): `LocalDataSource.kt:0`, `SearchViewModel.kt:0`, `CinevaApp.kt:0` (prev 1 warning unused), `App.kt:0`, `OMDbRemoteDataSource.kt:0` — safe area & loading fix below
+- Fix safe area: `CinevaApp.kt:33` `Scaffold(contentWindowInsets=WindowInsets(0,0,0,0))` + `Column.safeDrawingPadding().statusBarsPadding().padding(paddingValues)` untuk `enableEdgeToEdge` di `MainActivity.kt:13` — atasi batas atas tidak safe
+- Fix loading: `CinevaApp.kt:53` `LaunchedEffect(vm){ vm.loadDefault() }` auto `search("batman")` (sebelum tidak pernah trigger → Loading selamanya), `OMDbRemoteDataSource.kt:20` `HttpTimeout 10s/5s/10s` + OMDb `6f45ab5b` test `0.33s` OK
 
 ### Running tests
 

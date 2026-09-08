@@ -4,6 +4,7 @@ import io.codingskuy.cineva.data.models.DetailResponse
 import io.codingskuy.cineva.data.models.SearchResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
+import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.plugins.logging.LogLevel
 import io.ktor.client.plugins.logging.Logging
@@ -18,6 +19,11 @@ class OMDbRemoteDataSource(
             json(Json { ignoreUnknownKeys = true; isLenient = true })
         }
         install(Logging) { level = LogLevel.INFO }
+        install(HttpTimeout) {
+            requestTimeoutMillis = 10_000
+            connectTimeoutMillis = 5_000
+            socketTimeoutMillis = 10_000
+        }
     }
 ) {
     suspend fun search(query: String): SearchResponse {
