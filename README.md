@@ -64,8 +64,8 @@ Folder `.docs/` berisi **spesifikasi, deliverable APK, dan screenshot** untuk su
 | `PRD.md:1` | PRD Nice Movie — F-01 List, F-02 Detail, F-03 Live Search, F-04 Favorites (30 poin), OMDb API, evaluasi | 3.5 KB |
 | `PRD_KMP_CleanArchitecture.md:1` | TDD KMP — Compose MP, Clean Architecture 3-layer, Ktor, Serialization, SQLDelight, Coroutines, Turbine | 5.8 KB |
 | `Cineva-debug.apk` | **APK debug** `androidApp:assembleDebug` (14 MB) — build `2026-09-08 12:30`, `versionCode 1`, `targetSdk 36`, install `adb -s R9RWA01WLBA install -r .docs/Cineva-debug.apk` atau `adb shell pm path io.codingskuy.cineva` | 14 MB |
-| `ss_list_movies.png` | Screenshot **Movie List** — LazyColumn poster thumb+title+year (auto `batman` default) | 182 KB |
-| `ss_search_movies.png` | Screenshot **Live Search** — TextField + debounce 300ms, clear, hasil `batman` | 150 KB |
+| `ss_list_movies.png` | Screenshot **Movie List** — LazyColumn trending Top 10 via `GetMovieListUseCase` (`i` parallel, Shawshank/Godfather/Dark Knight...) + pagination | 182 KB |
+| `ss_search_movies.png` | Screenshot **Live Search** — TextField + debounce 300ms, clear, hasil search `batman` (example) | 150 KB |
 | `ss_movie_detailed.png` | Screenshot **Movie Detail** — poster full, released/runtime/imdbRating, plot/genre/director/actors + fav toggle | 230 KB |
 | `ss_favorited_movies.png` | Screenshot **Favorites** — SQLDelight persist, empty state `No favorites yet` | 91 KB |
 | `JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md` | Essay penggunaan AI | 14 KB |
@@ -155,7 +155,8 @@ Use run configurations in IDE toolbar or:
 - Fix: `LocalDataSource.kt:11` `Dispatchers.IO → Dispatchers.Default`, `isFavorite` via `selectById().mapToOneOrNull().map { it != null }`, hapus `suspend` insert/delete, `SearchViewModel.kt:29` `debounce(300) → debounce(300.milliseconds)`, `CinevaApp.kt:27` `TabRow → PrimaryTabRow` (M3), `MovieRepositoryImpl.kt:13` hapus import `map` unused
 - Post-fix v2 (2026-09-08): `LocalDataSource.kt:0`, `SearchViewModel.kt:0`, `CinevaApp.kt:0` (prev 1 warning unused), `App.kt:0`, `OMDbRemoteDataSource.kt:0` — safe area & loading fix below
 - Fix safe area: `CinevaApp.kt:33` `Scaffold(contentWindowInsets=WindowInsets(0,0,0,0))` + `Column.safeDrawingPadding().statusBarsPadding().padding(paddingValues)` untuk `enableEdgeToEdge` di `MainActivity.kt:13` — atasi batas atas tidak safe
-- Fix loading: `CinevaApp.kt:53` `LaunchedEffect(vm){ vm.loadDefault() }` auto `search("batman")` (sebelum tidak pernah trigger → Loading selamanya), `OMDbRemoteDataSource.kt:20` `HttpTimeout 10s/5s/10s` + OMDb `6f45ab5b` test `0.33s` OK
+- Fix loading: `CinevaApp.kt:53` `LaunchedEffect(vm){ vm.loadDefault() }` auto `GetMovieListUseCase` trending Top 10 via `i` parallel (sebelum `search("batman")` → Loading selamanya), `OMDbRemoteDataSource.kt:20` `HttpTimeout 10s/5s/10s` + OMDb `6f45ab5b` test `0.33s` OK
+- Trending: `GetMovieListUseCase.kt:9` `TRENDING_IDS 10` (Shawshank tt0111161 ... Fellowship tt0120737) fallback `search("movie")` jika quota habis, pagination `hasMore=false` single page
 
 ### Running tests
 

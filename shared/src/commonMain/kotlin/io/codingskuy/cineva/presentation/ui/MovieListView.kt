@@ -35,7 +35,7 @@ fun MovieListView(
     onLoadMore: () -> Unit = {}
 ) {
     if (movies.isEmpty() && !isLoadingMore) {
-        Text("No movies. Try searching 'batman'.", modifier = modifier.padding(16.dp))
+        Text("No movies. Try searching above.", modifier = modifier.padding(16.dp))
         return
     }
     val listState = rememberLazyListState()

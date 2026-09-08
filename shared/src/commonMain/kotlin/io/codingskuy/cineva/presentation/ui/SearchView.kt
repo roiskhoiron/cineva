@@ -22,7 +22,7 @@ fun SearchView(
         OutlinedTextField(
             value = query,
             onValueChange = onQueryChange,
-            label = { Text("Search movies (e.g. batman)") },
+            label = { Text("Search movies") },
             modifier = Modifier.weight(1f),
             singleLine = true
         )

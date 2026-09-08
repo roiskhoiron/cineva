@@ -116,7 +116,7 @@ fun CinevaApp(container: AppContainer) {
                 Box(modifier = Modifier.weight(1f)) {
                     when (selectedTab) {
                         0 -> {
-                            val vm = remember { MovieListViewModel(container.searchMoviesUseCase) }
+                            val vm = remember { MovieListViewModel(container.getMovieListUseCase, container.searchMoviesUseCase) }
                             LaunchedEffect(vm) { vm.loadDefault() }
                             val state by vm.uiState.collectAsState()
                             when (val s = state) {
