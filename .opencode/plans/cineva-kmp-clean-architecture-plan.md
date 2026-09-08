@@ -47,18 +47,19 @@ shared/src/androidMain (AndroidSqliteDriver, OkHttp) / iosMain (NativeSqliteDriv
 shared/src/commonTest (Turbine TDD)
 ```
 
-## 4. Fase Eksekusi
+## 4. Fase Eksekusi (updated 2026-09-08 — gradlew defer)
 
-**Fase 1 Skeleton (30-45m):** Update `libs.versions.toml`, `shared/build.gradle.kts` (serialization + sqldelight), `Favorite.sq`, fix `AndroidManifest`, hapus `Greeting.kt`, verify `assembleDebug`.
-**Fase 2 Domain+TDD (45-60m):** Entities, `MovieRepository` interface, 5 UseCases + `commonTest` Turbine.
-**Fase 3 Data (45-60m):** DTO `@Serializable`, Ktor Remote, SQLDelight Local, `RepositoryImpl`, drivers.
-**Fase 4 Presentation (60-75m):** UiState sealed, ViewModels StateFlow, 4 Compose UI + Coil + Voyager, `App.kt` NavHost.
-**Fase 5 QA (20-30m):** Wiring `MainActivity`/`MainViewController`, `testAndroidHostTest`/`iosSimulatorArm64Test`, fav persist, Polish, README.
+**Fase 1 Skeleton (done, atomic commit):** Update `libs.versions.toml`, `shared/build.gradle.kts` (serialization + sqldelight), `Favorite.sq`, fix `AndroidManifest`, skeleton `domain/data/presentation/di` + `ApiConfig` expect/actual — **no gradlew per fase**.
+**Fase 2 Domain+TDD:** Entities, `MovieRepository` interface, 5 UseCases + `commonTest` Turbine — git atomic.
+**Fase 3 Data:** DTO `@Serializable`, Ktor Remote, SQLDelight Local, `RepositoryImpl`, drivers — git atomic.
+**Fase 4 Presentation:** UiState sealed, ViewModels StateFlow, 4 Compose UI + Coil + Voyager, `App.kt` NavHost — git atomic.
+**Fase 5 QA:** Wiring `MainActivity`/`MainViewController`, Polish, README — git atomic.
 
-## 5. Verifikasi
+## 5. Verifikasi (deferred to akhir)
 
-`shared:assemble`, `commonTest`, `androidHostTest/iosSimulatorArm64Test`, launch `androidApp`, graphify update.
+- **Per fase:** hanya `git add . && git commit` atomic + `graphify update` (AST-only, ringan). **Tidak ada `./gradlew` tiap fase.**
+- **Akhir Fase 5 sekali:** `./gradlew :shared:commonTest :shared:androidHostTest :shared:iosSimulatorArm64Test :androidApp:assembleDebug` + `graphify update` + `git push`.
 
 ## 6. Next
 
-OMDb API key ready? Approve → exit plan mode → Fase 1.
+OMDb API key placeholder `getApiKey()=""` Fase 1 — isi real key di Fase 3 via `local.properties`/`Config.xcconfig`. Eksekusi secepatnya tanpa gate build.

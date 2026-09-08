@@ -1,0 +1,26 @@
+CREATE TABLE favorite (
+  imdbID TEXT PRIMARY KEY NOT NULL,
+  title TEXT NOT NULL,
+  year TEXT NOT NULL,
+  poster TEXT NOT NULL,
+  type TEXT NOT NULL DEFAULT 'movie',
+  addedAt INTEGER NOT NULL
+);
+
+selectAll:
+SELECT * FROM favorite ORDER BY addedAt DESC;
+
+selectById:
+SELECT * FROM favorite WHERE imdbID = ?;
+
+isFavorite:
+SELECT EXISTS(SELECT 1 FROM favorite WHERE imdbID = ?);
+
+insertFavorite:
+INSERT OR REPLACE INTO favorite(imdbID, title, year, poster, type, addedAt) VALUES (?, ?, ?, ?, ?, ?);
+
+deleteFavorite:
+DELETE FROM favorite WHERE imdbID = ?;
+
+deleteAll:
+DELETE FROM favorite;
