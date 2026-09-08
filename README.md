@@ -57,14 +57,14 @@ Current `shared/src/commonMain/kotlin/io/codingskuy/cineva/App.kt:1` masih templ
 
 ## Knowledge Graph (graphify)
 
-Generated `2026-09-08` via `graphify .` — full pipeline (AST + semantic):
+Generated `2026-09-08` via `graphify .` — full pipeline (AST + semantic), update via `graphify update .` after Fase 5:
 
 ```
-Corpus: 39 files · ~9,505 words
-  code: 24 files | docs: 4 files | images: 11 files
-Graph: 108 nodes · 104 edges · 30 communities
-Extraction: 72% EXTRACTED · 28% INFERRED (avg confidence 0.85)
-Token cost: 5,200 in · 1,800 out
+Corpus: 70 files · ~15k words (Fase 1-5 scaffold)
+  code: 45+ files | docs: 4 files | images: 11 files
+Graph: 268 nodes · 426 edges · 39 communities
+Extraction: ~80% EXTRACTED · ~20% INFERRED
+Initial cost: 5,200 in · 1,800 out — update AST-only (no LLM)
 ```
 
 Outputs di `graphify-out/`:
@@ -74,7 +74,7 @@ Outputs di `graphify-out/`:
 - `graph.json` — GraphRAG-ready JSON (NetworkX)
 - `manifest.json` + `cost.json` — incremental cache
 
-**Graph health:** `33 dangling-endpoint edges; 1 collapsed (directed); 3 collapsed (undirected)` — minor dangling dari semantic edges (OMDb ↔ Ktor) — tidak blok.
+**Graph health (initial):** `33 dangling, 1/3 collapsed` — minor dangling dari semantic edges — tidak blok. **Post Fase 5:** `Rebuilt: 268 nodes, 426 edges, 39 communities` via `graphify update .` (AST-only, no LLM).
 
 ### God Nodes (core abstractions)
 
