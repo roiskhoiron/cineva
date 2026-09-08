@@ -4,8 +4,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.PrimaryTabRow
 import androidx.compose.material3.Tab
-import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -24,7 +24,7 @@ fun CinevaApp(container: AppContainer) {
     MaterialTheme {
         var selectedTab by remember { mutableStateOf(0) }
         Column(modifier = Modifier.fillMaxSize()) {
-            TabRow(selectedTabIndex = selectedTab) {
+            PrimaryTabRow(selectedTabIndex = selectedTab) {
                 Tab(selected = selectedTab == 0, onClick = { selectedTab = 0 }, text = { Text("Movies") })
                 Tab(selected = selectedTab == 1, onClick = { selectedTab = 1 }, text = { Text("Search") })
                 Tab(selected = selectedTab == 2, onClick = { selectedTab = 2 }, text = { Text("Favorites") })

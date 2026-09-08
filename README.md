@@ -112,29 +112,46 @@ Wiki: tambah `--wiki` untuk `graphify-out/wiki/index.md` (agent-crawlable).
 
 Verifikasi per fase: `assembleDebug` / `commonTest` / `androidHostTest` / `iosSimulatorArm64Test` + `graphify update .`
 
+## Setup — API Key (.env)
+
+OMDb membutuhkan API key. File `.env` di root (sudah ada, `API_KEY=6f45ab5b:1`, di-ignore via `.gitignore:1`) di-wire ke `shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/ApiConfig.kt:1` (`expect fun getApiKey()`):
+
+- `shared/src/androidMain/kotlin/.../ApiConfig.android.kt:1` → `actual fun getApiKey() = "6f45ab5b"` (hardcode dari `.env`, TODO BuildConfig)
+- `shared/src/iosMain/kotlin/.../ApiConfig.ios.kt:1` → sama
+- Alternatif: `local.properties` (`omdb.apiKey=...`) + `iosApp/Configuration/Config.xcconfig` → `BuildKonfig` (Fase 3 TODO)
+
+Jangan commit `.env` — sudah di `.gitignore`.
+
 ## Running the apps
 
 Use run configurations in IDE toolbar or:
 
 - Android: `./gradlew :androidApp:assembleDebug` → `androidApp/build/outputs/apk/debug/*.apk` (butuh `INTERNET` permission, sudah difix Fase 1)
+  - Samsung device tersedia: `R9RWA01WLBA device` (via `adb devices:1`) — `Run → androidApp` sudah dieksekusi di background, auto-install ke Samsung
+  - Manual: `./gradlew :androidApp:installDebug` atau `adb -s R9RWA01WLBA install -r androidApp/build/outputs/apk/debug/androidApp-debug.apk`
 - iOS: open `iosApp/` in Xcode → Run (darwin driver + native sqlite)
 
-Env: `local.properties` (`omdb.apiKey=...`) + `iosApp/Configuration/Config.xcconfig` → `expect fun getApiKey(): String` (jangan hardcode).
+### Analyzer & Build Health (2026-09-08)
+
+- IDE index: `isDumbMode=false, isIndexing=false`
+- Diagnostics pre-fix: `LocalDataSource.kt:16` `Unresolved reference 'IO'` (commonMain tidak punya `Dispatchers.IO`) + `isFavorite` star-projection `Comparable` + `suspend` redundant
+- Fix: `LocalDataSource.kt:11` `Dispatchers.IO → Dispatchers.Default`, `isFavorite` via `selectById().mapToOneOrNull().map { it != null }`, hapus `suspend` insert/delete, `SearchViewModel.kt:29` `debounce(300) → debounce(300.milliseconds)`, `CinevaApp.kt:27` `TabRow → PrimaryTabRow` (M3), `MovieRepositoryImpl.kt:13` hapus import `map` unused
+- Post-fix: `LocalDataSource.kt:0` problems `0`, `SearchViewModel.kt:0`, `CinevaApp.kt:1` warning `unused` saja
 
 ### Running tests
 
-Gutter run button or Gradle:
+Gutter run button or Gradle (defer ke akhir Fase 5 per plan, tapi bisa sekarang):
 
 - Android: `./gradlew :shared:testAndroidHostTest`
 - iOS: `./gradlew :shared:iosSimulatorArm64Test`
 - All common: `./gradlew :shared:commonTest` (Turbine `test {}` untuk UseCase/ViewModel)
-- Detail search flow: debounce `300ms` + `distinctUntilChanged` (tested via `runTest`)
+- Detail search flow: debounce `300.milliseconds` + `distinctUntilChanged` (tested via `runTest`)
 
 ## Git
 
-- Branch `main` (dari `master`), initial commit `2c499f3 initialize project` — 77 files
-- Commit atomic graphify: `graphify-out/graph.json + graph.html + GRAPH_REPORT.md + manifest.json` + README update
-- `.gitignore:1` — `**/build/`, `.gradle`, `DerivedData/`, `*.apk`, `.env`, `graphify-out/.graphify_*`, `graphify-out/cost.json`
+- Branch `master` (origin/master), initial commit `2c499f3 initialize project` — 77 files, rebase `83e5ac6 docs: Add essay`, 6 commits atomic Fase 1-5 pushed `b50ab47`
+- Commits: `e4bbf5d chore fase1`, `e9d0333 feat domain`, `eed0272 feat data`, `d469bdf feat presentation`, `b50ab47 chore fase5` + `dbf60c6 docs graphify` + `52326a5 README`
+- `.gitignore:1` — `**/build/`, `.gradle`, `DerivedData/`, `*.apk`, `.env`, `graphify-out/.graphify_*`, `graphify-out/cost.json`, `graphify-out/.lean-ctx/`
 
 ---
 

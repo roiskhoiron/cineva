@@ -2,6 +2,7 @@ package io.codingskuy.cineva.data.datasources.local
 
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToList
+import app.cash.sqldelight.coroutines.mapToOneOrNull
 import io.codingskuy.cineva.db.CinevaDatabase
 import io.codingskuy.cineva.domain.entities.Movie
 import kotlinx.coroutines.Dispatchers
@@ -13,7 +14,7 @@ class LocalDataSource(driverFactory: DatabaseDriverFactory) {
     private val queries = database.favoriteQueries
 
     fun getFavorites(): Flow<List<Movie>> =
-        queries.selectAll().asFlow().mapToList(Dispatchers.IO).map { list ->
+        queries.selectAll().asFlow().mapToList(Dispatchers.Default).map { list ->
             list.map { row ->
                 Movie(
                     imdbID = row.imdbID,
@@ -26,20 +27,21 @@ class LocalDataSource(driverFactory: DatabaseDriverFactory) {
         }
 
     fun isFavorite(imdbID: String): Flow<Boolean> =
-        queries.isFavorite(imdbID).asFlow().mapToList(Dispatchers.IO).map { it.firstOrNull() ?: 0L > 0 }
+        queries.selectById(imdbID).asFlow().mapToOneOrNull(Dispatchers.Default)
+            .map { it != null }
 
-    suspend fun insertFavorite(movie: Movie) {
+    fun insertFavorite(movie: Movie) {
         queries.insertFavorite(
             imdbID = movie.imdbID,
             title = movie.title,
             year = movie.year,
             poster = movie.poster,
             type = movie.type,
-            addedAt = 0L // TODO: replace with Clock.System.now() in Fase 5
+            addedAt = 0L
         )
     }
 
-    suspend fun deleteFavorite(imdbID: String) {
+    fun deleteFavorite(imdbID: String) {
         queries.deleteFavorite(imdbID)
     }
 }
