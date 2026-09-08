@@ -15,8 +15,6 @@ class MainActivity : ComponentActivity() {
         io.codingskuy.cineva.data.datasources.local.initDatabaseContext(this)
 
         setContent {
-            // TODO Fase 5: switch to CinevaApp(AppContainer(...)) when DI ready
-            // CinevaApp(AppContainer(DatabaseDriverFactory(), apiKey = ""))
             App()
         }
     }
