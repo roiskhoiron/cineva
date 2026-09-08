@@ -31,6 +31,8 @@ konan/
 *.ap_
 *.aab
 *.apk
+!/.docs/*.apk
+!.docs/*.aab
 *.keystore
 *.jks
 google-services.json

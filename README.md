@@ -31,7 +31,7 @@ Package: `io.codingskuy.cineva` (single `shared` module, 3 layers via packages).
 
 ```
 Cineva/
-├── .docs/                  # PRD + TDD spec
+├── .docs/                  # PRD + TDD spec + APK + screenshots (lihat ## Docs)
 ├── .opencode/plans/        # KMP Clean Architecture plan
 ├── androidApp/             # MainActivity.kt (ComponentActivity) + res mipmap
 ├── iosApp/                 # ContentView.swift → MainViewController.kt → App()
@@ -39,21 +39,38 @@ Cineva/
 │   ├── src/commonMain/kotlin/io/codingskuy/cineva/
 │   │   ├── data/{datasources/{remote,local}, models, repositories/MovieRepositoryImpl}
 │   │   ├── domain/{entities/{Movie,MovieDetail}, repositories/MovieRepository, usecases/{GetList,Search,GetDetail,GetFav,ToggleFav}}
-│   │   ├── presentation/{model/UiState, viewmodel/*ViewModel, ui/{MovieList,Detail,Search,Favorite}}
-│   │   ├── di/AppContainer + App.kt (NavHost) + Platform.kt (expect/actual)
+│   │   ├── presentation/{model/UiState, viewmodel/*ViewModel, ui/{MovieList,Detail,Search,Favorite,CinevaApp}}
+│   │   ├── di/AppContainer + App.kt (CinevaApp via createAppContainer) + Platform.kt (expect/actual)
 │   │   └── sqldelight/Favorite.sq
-│   ├── src/androidMain/    # AndroidSqliteDriver + OkHttp engine
+│   ├── src/androidMain/    # AndroidSqliteDriver + OkHttp engine + DatabaseDriverFactory
 │   ├── src/iosMain/        # NativeSqliteDriver + Darwin engine + MainViewController
 │   ├── src/commonTest/     # Turbine TDD
 │   └── build.gradle.kts
-├── gradle/libs.versions.toml # agp 9.0.1, kotlin 2.4.10, compose 1.11.1
+├── gradle/libs.versions.toml # agp 9.0.1, kotlin 2.4.10, compose 1.11.1, ktor 3.1.3, sqldelight 2.0.2, coil3, turbine
 ├── graphify-out/           # Knowledge graph (see below)
 └── README.md
 ```
 
-Flow: `SearchView → ViewModel(debounce) → SearchMoviesUseCase → MovieRepositoryImpl → Ktor Remote / SQLDelight Local → StateFlow → Compose`
+Flow: `SearchView → ViewModel(debounce 300ms) → SearchMoviesUseCase → MovieRepositoryImpl → Ktor Remote (OMDb s=/i=) / SQLDelight Local → StateFlow → Compose (CinevaApp TabRow + Detail navigation)`
 
-Current `shared/src/commonMain/kotlin/io/codingskuy/cineva/App.kt:1` masih template `Button "Click me!"` — akan diganti NavHost 4 screen (plan Fase 4).
+Entry: `androidApp/MainActivity.kt:20` `App()` → `shared/App.kt:11` `CinevaApp(createAppContainer())` → 3 tabs + detail `onMovieClick`. `App.kt` lama `Button "Click me!"` sudah dihapus di `12f9719`.
+
+## Docs — Isi Folder `.docs`
+
+Folder `.docs/` berisi **spesifikasi, deliverable APK, dan screenshot** untuk submission:
+
+| File | Deskripsi | Ukuran |
+|------|-----------|--------|
+| `PRD.md:1` | PRD Nice Movie — F-01 List, F-02 Detail, F-03 Live Search, F-04 Favorites (30 poin), OMDb API, evaluasi | 3.5 KB |
+| `PRD_KMP_CleanArchitecture.md:1` | TDD KMP — Compose MP, Clean Architecture 3-layer, Ktor, Serialization, SQLDelight, Coroutines, Turbine | 5.8 KB |
+| `Cineva-debug.apk` | **APK debug** `androidApp:assembleDebug` (14 MB) — build `2026-09-08 12:30`, `versionCode 1`, `targetSdk 36`, install `adb -s R9RWA01WLBA install -r .docs/Cineva-debug.apk` atau `adb shell pm path io.codingskuy.cineva` | 14 MB |
+| `ss_list_movies.png` | Screenshot **Movie List** — LazyColumn poster thumb+title+year (auto `batman` default) | 182 KB |
+| `ss_search_movies.png` | Screenshot **Live Search** — TextField + debounce 300ms, clear, hasil `batman` | 150 KB |
+| `ss_movie_detailed.png` | Screenshot **Movie Detail** — poster full, released/runtime/imdbRating, plot/genre/director/actors + fav toggle | 230 KB |
+| `ss_favorited_movies.png` | Screenshot **Favorites** — SQLDelight persist, empty state `No favorites yet` | 91 KB |
+| `JAWABAN ESSAY - PENGGUNAAN AI DALAM PEKERJAAN.md` | Essay penggunaan AI | 14 KB |
+
+> Catatan: `.docs/Cineva-debug.apk` di-allow via `.gitignore:33` `!/.docs/*.apk` (global `*.apk` tetap ignore). Kunci OMDb `6f45ab5b` dari `.env:1` sudah ter-wire di `ApiConfig`.
 
 ## Knowledge Graph (graphify)
 
