@@ -1,0 +1,236 @@
+{
+  ".opencode/opencode.json": {
+    "mtime": 1788840927.6852052,
+    "seen": 1788842326.221708,
+    "ast_hash": "e5f74d14a81702b55bdf53b33ec991d7",
+    "semantic_hash": "e5f74d14a81702b55bdf53b33ec991d7"
+  },
+  ".opencode/plugins/graphify.js": {
+    "mtime": 1788840901.6103718,
+    "seen": 1788842326.2217119,
+    "ast_hash": "3ea725724bc8ebe483c9f13d6aa1124f",
+    "semantic_hash": "3ea725724bc8ebe483c9f13d6aa1124f"
+  },
+  "androidApp/build.gradle.kts": {
+    "mtime": 1788840564.0089822,
+    "seen": 1788842326.2217128,
+    "ast_hash": "74dcf0e917b3ff2c12761500fe0a0a78",
+    "semantic_hash": "74dcf0e917b3ff2c12761500fe0a0a78"
+  },
+  "androidApp/src/main/kotlin/io/codingskuy/cineva/MainActivity.kt": {
+    "mtime": 1788840564.0104222,
+    "seen": 1788842326.221714,
+    "ast_hash": "4799aa43f29f0f9beac564d03f93e40b",
+    "semantic_hash": "4799aa43f29f0f9beac564d03f93e40b"
+  },
+  "build.gradle.kts": {
+    "mtime": 1788840564.0166159,
+    "seen": 1788842326.221715,
+    "ast_hash": "87269b509d339a294874123afc38009a",
+    "semantic_hash": "87269b509d339a294874123afc38009a"
+  },
+  "gradlew": {
+    "mtime": 1788840564.018922,
+    "seen": 1788842326.221715,
+    "ast_hash": "780b1d3e23a3b82154795f73df943a14",
+    "semantic_hash": "780b1d3e23a3b82154795f73df943a14"
+  },
+  "iosApp/iosApp/Assets.xcassets/AccentColor.colorset/Contents.json": {
+    "mtime": 1788840564.0208974,
+    "seen": 1788842326.221716,
+    "ast_hash": "88cd26db3e6a44fc46b1d81444089bbc",
+    "semantic_hash": "88cd26db3e6a44fc46b1d81444089bbc"
+  },
+  "iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1788840564.0211563,
+    "seen": 1788842326.221716,
+    "ast_hash": "807b26573e0d8b35fa8fea89f5fc713e",
+    "semantic_hash": "807b26573e0d8b35fa8fea89f5fc713e"
+  },
+  "iosApp/iosApp/Assets.xcassets/Contents.json": {
+    "mtime": 1788840564.0225568,
+    "seen": 1788842326.221717,
+    "ast_hash": "afeb3bfa4cfb0884ca431ffe27a35432",
+    "semantic_hash": "afeb3bfa4cfb0884ca431ffe27a35432"
+  },
+  "iosApp/iosApp/ContentView.swift": {
+    "mtime": 1788840564.0227427,
+    "seen": 1788842326.221718,
+    "ast_hash": "7af742fb4730c3d49e27c73cf94d131c",
+    "semantic_hash": "7af742fb4730c3d49e27c73cf94d131c"
+  },
+  "iosApp/iosApp/Preview Content/Preview Assets.xcassets/Contents.json": {
+    "mtime": 1788840564.0233238,
+    "seen": 1788842326.221718,
+    "ast_hash": "afeb3bfa4cfb0884ca431ffe27a35432",
+    "semantic_hash": "afeb3bfa4cfb0884ca431ffe27a35432"
+  },
+  "iosApp/iosApp/iOSApp.swift": {
+    "mtime": 1788840564.0236728,
+    "seen": 1788842326.221719,
+    "ast_hash": "f6a01e7c9aa7a979c4ef926df57fe088",
+    "semantic_hash": "f6a01e7c9aa7a979c4ef926df57fe088"
+  },
+  "settings.gradle.kts": {
+    "mtime": 1788840564.0245023,
+    "seen": 1788842326.221719,
+    "ast_hash": "3008bde43199b3db58eb32fb3a1c874f",
+    "semantic_hash": "3008bde43199b3db58eb32fb3a1c874f"
+  },
+  "shared/build.gradle.kts": {
+    "mtime": 1788840564.0249648,
+    "seen": 1788842326.22172,
+    "ast_hash": "7bd5b2f15459009e2345fd92bc9288ef",
+    "semantic_hash": "7bd5b2f15459009e2345fd92bc9288ef"
+  },
+  "shared/src/androidHostTest/kotlin/io/codingskuy/cineva/SharedLogicAndroidHostTest.kt": {
+    "mtime": 1788840564.0257964,
+    "seen": 1788842326.2217212,
+    "ast_hash": "5f18f0483e34f857959e7fcf864f70c6",
+    "semantic_hash": "5f18f0483e34f857959e7fcf864f70c6"
+  },
+  "shared/src/androidMain/kotlin/io/codingskuy/cineva/Platform.android.kt": {
+    "mtime": 1788840564.0265124,
+    "seen": 1788842326.2217212,
+    "ast_hash": "08acf12fe1de78b34cba2cdd14108016",
+    "semantic_hash": "08acf12fe1de78b34cba2cdd14108016"
+  },
+  "shared/src/commonMain/kotlin/io/codingskuy/cineva/App.kt": {
+    "mtime": 1788840564.0274675,
+    "seen": 1788842326.2217221,
+    "ast_hash": "4e37e74069083b7f8af8ec223fa45d06",
+    "semantic_hash": "4e37e74069083b7f8af8ec223fa45d06"
+  },
+  "shared/src/commonMain/kotlin/io/codingskuy/cineva/Greeting.kt": {
+    "mtime": 1788840564.027631,
+    "seen": 1788842326.2217221,
+    "ast_hash": "8f4c5fd3062e10f03792b03effacabd5",
+    "semantic_hash": "8f4c5fd3062e10f03792b03effacabd5"
+  },
+  "shared/src/commonMain/kotlin/io/codingskuy/cineva/GreetingUtil.kt": {
+    "mtime": 1788840564.0278018,
+    "seen": 1788842326.2217228,
+    "ast_hash": "4d63d27fcc8b0f9306e182b510711b75",
+    "semantic_hash": "4d63d27fcc8b0f9306e182b510711b75"
+  },
+  "shared/src/commonMain/kotlin/io/codingskuy/cineva/Platform.kt": {
+    "mtime": 1788840564.0279748,
+    "seen": 1788842326.2217228,
+    "ast_hash": "bed300899f5579e9d79c4a500f6590d9",
+    "semantic_hash": "bed300899f5579e9d79c4a500f6590d9"
+  },
+  "shared/src/commonTest/kotlin/io/codingskuy/cineva/SharedCommonTest.kt": {
+    "mtime": 1788840564.0285628,
+    "seen": 1788842326.2217238,
+    "ast_hash": "bde4fa7bfc951695739ed3a11234b60a",
+    "semantic_hash": "bde4fa7bfc951695739ed3a11234b60a"
+  },
+  "shared/src/iosMain/kotlin/io/codingskuy/cineva/MainViewController.kt": {
+    "mtime": 1788840564.029189,
+    "seen": 1788842326.2217238,
+    "ast_hash": "e8f06763298a9ac50c0c501d38809cf1",
+    "semantic_hash": "e8f06763298a9ac50c0c501d38809cf1"
+  },
+  "shared/src/iosMain/kotlin/io/codingskuy/cineva/Platform.ios.kt": {
+    "mtime": 1788840564.0293639,
+    "seen": 1788842326.221725,
+    "ast_hash": "d688c235f81d00abedc8a17b6f073113",
+    "semantic_hash": "d688c235f81d00abedc8a17b6f073113"
+  },
+  "shared/src/iosTest/kotlin/io/codingskuy/cineva/SharedLogicIOSTest.kt": {
+    "mtime": 1788840564.029952,
+    "seen": 1788842326.221726,
+    "ast_hash": "9d74c9ef99990dada339c082c83da860",
+    "semantic_hash": "9d74c9ef99990dada339c082c83da860"
+  },
+  ".docs/PRD.md": {
+    "mtime": 1788837548.2354972,
+    "seen": 1788842326.221726,
+    "ast_hash": "118a79ad133bb7efe4dc1ccaae6606a8",
+    "semantic_hash": "118a79ad133bb7efe4dc1ccaae6606a8"
+  },
+  ".docs/PRD_KMP_CleanArchitecture.md": {
+    "mtime": 1788840726.9093802,
+    "seen": 1788842326.221727,
+    "ast_hash": "8503de11632d6d2a87f2a8e0a1e894e0",
+    "semantic_hash": "8503de11632d6d2a87f2a8e0a1e894e0"
+  },
+  "AGENTS.md": {
+    "mtime": 1788840901.6101015,
+    "seen": 1788842326.221727,
+    "ast_hash": "6a47d64fcc136324ca395065a707ef76",
+    "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
+  },
+  "README.md": {
+    "mtime": 1788840564.0086153,
+    "seen": 1788842326.221728,
+    "ast_hash": "a1ebba4a0622d7e1711acfa7a6cc7f61",
+    "semantic_hash": "a1ebba4a0622d7e1711acfa7a6cc7f61"
+  },
+  "androidApp/src/main/res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1788840564.0121624,
+    "seen": 1788842326.221728,
+    "ast_hash": "adcaf5b958ee155708e77f23ac6b3cdb",
+    "semantic_hash": "adcaf5b958ee155708e77f23ac6b3cdb"
+  },
+  "androidApp/src/main/res/mipmap-hdpi/ic_launcher_round.png": {
+    "mtime": 1788840564.012466,
+    "seen": 1788842326.221729,
+    "ast_hash": "698fe3c4ded44129534ed811a4024bbc",
+    "semantic_hash": "698fe3c4ded44129534ed811a4024bbc"
+  },
+  "androidApp/src/main/res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1788840564.0128436,
+    "seen": 1788842326.221729,
+    "ast_hash": "472c3ecb86996bed8516b338935a51d0",
+    "semantic_hash": "472c3ecb86996bed8516b338935a51d0"
+  },
+  "androidApp/src/main/res/mipmap-mdpi/ic_launcher_round.png": {
+    "mtime": 1788840564.0130942,
+    "seen": 1788842326.22173,
+    "ast_hash": "f3aac23c5162c50c0a41cdd205a004a8",
+    "semantic_hash": "f3aac23c5162c50c0a41cdd205a004a8"
+  },
+  "androidApp/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1788840564.013491,
+    "seen": 1788842326.22173,
+    "ast_hash": "7f108fe7b46884cf7953694e5245d021",
+    "semantic_hash": "7f108fe7b46884cf7953694e5245d021"
+  },
+  "androidApp/src/main/res/mipmap-xhdpi/ic_launcher_round.png": {
+    "mtime": 1788840564.0138474,
+    "seen": 1788842326.2217312,
+    "ast_hash": "c6db0296101bf462a82b88ba6d256842",
+    "semantic_hash": "c6db0296101bf462a82b88ba6d256842"
+  },
+  "androidApp/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1788840564.014301,
+    "seen": 1788842326.2217321,
+    "ast_hash": "e8e005a4a7425340fd2ff7dab98d99b5",
+    "semantic_hash": "e8e005a4a7425340fd2ff7dab98d99b5"
+  },
+  "androidApp/src/main/res/mipmap-xxhdpi/ic_launcher_round.png": {
+    "mtime": 1788840564.0146372,
+    "seen": 1788842326.2217321,
+    "ast_hash": "9e3000786992bbd78c3f075df7d2d4b3",
+    "semantic_hash": "9e3000786992bbd78c3f075df7d2d4b3"
+  },
+  "androidApp/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1788840564.015184,
+    "seen": 1788842326.221733,
+    "ast_hash": "1e49d495a78909ab8754ec436bc39147",
+    "semantic_hash": "1e49d495a78909ab8754ec436bc39147"
+  },
+  "androidApp/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png": {
+    "mtime": 1788840564.0157273,
+    "seen": 1788842326.221733,
+    "ast_hash": "5800e2a5dbde6ab1c96157767f29ef04",
+    "semantic_hash": "5800e2a5dbde6ab1c96157767f29ef04"
+  },
+  "iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/app-icon-1024.png": {
+    "mtime": 1788840564.0223422,
+    "seen": 1788842326.2217338,
+    "ast_hash": "78fdb082bd35060897f3519e6714b3cc",
+    "semantic_hash": "78fdb082bd35060897f3519e6714b3cc"
+  }
+}
