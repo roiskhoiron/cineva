@@ -42,7 +42,7 @@ class GetMovieListUseCase(
             val movies = coroutineScope {
                 TRENDING_IDS.map { imdbID ->
                     async {
-                        val result = repository.getMovieDetail(imdbID).first()
+                        val result = repository.getMovieDetail(imdbID).first { it !is Result.Loading }
                         when (result) {
                             is Result.Success -> Movie(
                                 imdbID = result.data.imdbID,
@@ -56,26 +56,26 @@ class GetMovieListUseCase(
                     }
                 }.awaitAll().filterNotNull()
             }
-            // If some lookups failed (quota), fallback to search("movie")
-            val finalMovies = if (movies.isEmpty()) {
-                // Fallback: try generic search
-                val fallback = repository.searchMovies("movie", page).first()
-                when (fallback) {
-                    is Result.Success -> fallback.data.movies
-                    else -> emptyList()
-                }
-            } else movies
-
-            emit(
-                Result.Success(
-                    PaginatedMovies(
-                        movies = finalMovies,
-                        totalResults = TRENDING_IDS.size,
-                        page = page,
-                        hasMore = false // trending is single page
+            if (movies.isNotEmpty()) {
+                emit(
+                    Result.Success(
+                        PaginatedMovies(
+                            movies = movies,
+                            totalResults = TRENDING_IDS.size,
+                            page = page,
+                            hasMore = false
+                        )
                     )
                 )
-            )
+            } else {
+                // Fallback: try generic search s=movie (10 per page) if trending fails (quota)
+                val fallback = repository.searchMovies("movie", page).first { it !is Result.Loading }
+                when (fallback) {
+                    is Result.Success -> emit(fallback)
+                    is Result.Error -> emit(Result.Success(PaginatedMovies(emptyList(), 0, page, false)))
+                    else -> emit(Result.Error("No movies"))
+                }
+            }
         } catch (e: Exception) {
             emit(Result.Error(e.message ?: "Failed to load trending", e))
         }
