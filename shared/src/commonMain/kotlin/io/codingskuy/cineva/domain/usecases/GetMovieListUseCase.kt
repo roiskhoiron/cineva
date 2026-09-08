@@ -33,12 +33,6 @@ class GetMovieListUseCase(
     operator fun invoke(page: Int = 1, pageSize: Int = 10): Flow<Result<PaginatedMovies>> = flow {
         emit(Result.Loading)
         try {
-            // For pagination beyond first page, fallback to generic s=movie search
-            // Trending list is single page (10), page>1 returns empty with hasMore=false
-            if (page > 1) {
-                emit(Result.Success(PaginatedMovies(emptyList(), TRENDING_IDS.size, page, false)))
-                return@flow
-            }
             val movies = coroutineScope {
                 TRENDING_IDS.map { imdbID ->
                     async {
@@ -57,13 +51,17 @@ class GetMovieListUseCase(
                 }.awaitAll().filterNotNull()
             }
             if (movies.isNotEmpty()) {
+                // Paginate trending list
+                val startIndex = (page - 1) * pageSize
+                val endIndex = minOf(startIndex + pageSize, movies.size)
+                val pageMovies = if (startIndex < movies.size) movies.subList(startIndex, endIndex) else emptyList()
                 emit(
                     Result.Success(
                         PaginatedMovies(
-                            movies = movies,
+                            movies = pageMovies,
                             totalResults = TRENDING_IDS.size,
                             page = page,
-                            hasMore = false
+                            hasMore = endIndex < movies.size
                         )
                     )
                 )
