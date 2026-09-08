@@ -150,9 +150,9 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1788844026.9629073,
-    "seen": 1788844522.636224,
-    "ast_hash": "f8ed37519ec160dde65af59f0bd38094",
+    "mtime": 1788844877.79319,
+    "seen": 1788845010.1693718,
+    "ast_hash": "36662533e61a5c89c137cc2fce2f5a9d",
     "semantic_hash": ""
   },
   "androidApp/src/main/res/mipmap-hdpi/ic_launcher.png": {
@@ -252,9 +252,9 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/OMDbRemoteDataSource.kt": {
-    "mtime": 1788843353.998421,
-    "seen": 1788844015.037705,
-    "ast_hash": "771e4419dde75665e6fe4499f579f1ae",
+    "mtime": 1788844795.0853193,
+    "seen": 1788845010.169346,
+    "ast_hash": "0b34401d8cff90a6729283addd448ae4",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/data/models/OmdbModels.kt": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/CinevaApp.kt": {
-    "mtime": 1788843741.1077332,
-    "seen": 1788844015.0377119,
-    "ast_hash": "4bc9d53eb8d3fec630ac092ebaf62f79",
+    "mtime": 1788844991.6152596,
+    "seen": 1788845010.169356,
+    "ast_hash": "96b2047c4e56852376900640969a7dee",
     "semantic_hash": ""
   },
   "shared/src/commonMain/kotlin/io/codingskuy/cineva/presentation/ui/FavoriteView.kt": {
@@ -429,6 +429,12 @@
     "mtime": 1788843353.9443374,
     "seen": 1788844522.636224,
     "ast_hash": "42cf6b0c3f33d444ecf1032ab60d3043",
+    "semantic_hash": ""
+  },
+  ".docs/img.png": {
+    "mtime": 1788845008.6047337,
+    "seen": 1788845010.169373,
+    "ast_hash": "65675e3e225477be88beae4d000f50be",
     "semantic_hash": ""
   }
 }
