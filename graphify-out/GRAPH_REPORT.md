@@ -1,7 +1,7 @@
 # Graph Report - Cineva  (2026-09-08)
 
 ## Corpus Check
-- 63 files · ~42,119 words
+- 63 files · ~42,158 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `da637cbf`
+- Built from commit: `ec1f9dbb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
