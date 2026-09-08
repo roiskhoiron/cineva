@@ -131,7 +131,7 @@ Verifikasi per fase: `assembleDebug` / `commonTest` / `androidHostTest` / `iosSi
 
 ## Setup — API Key (.env)
 
-OMDb membutuhkan API key. File `.env` di root (sudah ada, `API_KEY=6f45ab5b:1`, di-ignore via `.gitignore:1`) di-wire ke `shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/ApiConfig.kt:1` (`expect fun getApiKey()`):
+OMDb membutuhkan API key. File `.env` di root (sudah ada, `API_KEY=""`, di-ignore via `.gitignore:1`) di-wire ke `shared/src/commonMain/kotlin/io/codingskuy/cineva/data/datasources/remote/ApiConfig.kt:1` (`expect fun getApiKey()`):
 
 - `shared/src/androidMain/kotlin/.../ApiConfig.android.kt:1` → `actual fun getApiKey() = "6f45ab5b"` (hardcode dari `.env`, TODO BuildConfig)
 - `shared/src/iosMain/kotlin/.../ApiConfig.ios.kt:1` → sama
